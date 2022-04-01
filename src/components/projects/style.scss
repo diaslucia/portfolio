@@ -1,0 +1,25 @@
+@import "../../sass/theme.scss";
+
+.projectsContainer{
+    background-color:$secondaryBackground;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .projectsTitleContainer{
+        .projectsTitle{
+            @include titleFont($title);
+            color: $primaryTitle;
+            text-align: center;
+            padding: $large;
+        }
+    }
+    .projectsMainContainer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+}

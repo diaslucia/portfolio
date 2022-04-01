@@ -2,42 +2,46 @@
 
 $main: #f0d3ec;
 $secondary: #ffffff;
-$primaryTitle: #bf4580;
+$third: rgb(97, 25, 61);
+$primaryTitle: #bb4b81;
 $secondaryTitle: #212121;
+$thirdTitle: #ffffff;
 $primaryText: #212121;
 $secondaryText: #ffffff;
-$primaryBackground: #f0d3ec;
+$primaryBackground: #fff2fd;
 $secondaryBackground: #ffffff;
+$thirdBackground:rgb(97, 25, 61);
 
-// Margin
-
-$large: 30px;
-$medium: 20px;
-$small: 10px;
-
-// Padding
+// Margin Padding
 
 $large: 30px;
-$medium: 20px;
-$small: 10px;
+$medium: 23px;
+$small: 17px;
+
 
 // Font Size
 
-$title: 25;
-$text: 20;
-$button: 20;
-$large: 35;
+$title: 21px;
+$text: 16px;
+$button: 20px;
 
 //Fonts
 
 @mixin titleFont ($size) {
     font-size: $size;
-    font-family: anton, sans-serif;
+    font-family: 'Mulish', sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
 }
 
-@mixin font2 ($size) {
+@mixin textFont ($size) {
     font-size: $size;
-    font-family: oswald, sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+@mixin navFont ($size) {
+    font-size: $size;
+    font-family: 'Mulish', sans-serif;
 }
 
 //Flex

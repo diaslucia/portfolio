@@ -37,6 +37,11 @@ $cd yourProjectDirectory
 ```
 $npm install
 ```
+4. Install Font Awesome Icons
+```
+npm i --save @fortawesome/fontawesome-svg-core  @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons
+```
+
 5. Ejecute the app (and close it with Ctrl + C)
 ```
 $npm start

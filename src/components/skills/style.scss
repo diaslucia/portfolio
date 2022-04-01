@@ -1,0 +1,40 @@
+@import "../../sass/theme.scss";
+
+.skillsContainer{
+    background-color: $thirdBackground;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .skillsTitleContainer{
+        .skillsTitle{
+            @include titleFont($title);
+            color: $thirdTitle;
+            text-align: center;
+            padding: $large;
+        }
+    }
+    .skillsImgContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        div{
+            img{
+                width: 50px;
+                margin: $small;
+            }
+            p{
+                @include textFont($text);
+                color: $secondaryText;
+                text-align: center;
+                margin: 0px;
+            }
+        } 
+    }
+}
+

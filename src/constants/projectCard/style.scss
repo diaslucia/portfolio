@@ -1,0 +1,12 @@
+@import "../../sass/theme.scss";
+
+.cardContainer {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+    p{
+        margin: 0px;
+    }
+}
