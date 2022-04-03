@@ -1,16 +1,20 @@
 import style from "./style.scss";
 import ProjectCard from "../../constants/projectCard/index";
 import ProjectPage from "../../constants/projectPage/index";
-import projectOne from "./p1.png";
-import projectTwo from "./p2.png";
-import projectThree from "./p3.png";
-import projectFour from "./p4.png";
-import projectFive from "./p5.png";
-import projectSix from "./p1.png";
+
+import { PROJECTS } from "../../constants/projects/projects";
+import { DETAILS } from "../../constants/details/details";
 
 const Projects = () => {
 
-
+    const renderProjectPage = (id) => {
+        let project = DETAILS.filter((page) => page.id === id);
+        project.map(page => {
+            console.log(page.id);
+            return(
+            <ProjectPage key={page.id} title={page.title} tecnology={page.tecnology} description={page.description}/>)
+        })
+    }
     return(
         <div className="projectsContainer" id="projects">
 
@@ -19,14 +23,18 @@ const Projects = () => {
             </div>
 
             <div className="projectsMainContainer">
-                <ProjectCard title={"Consultoría Integral"} tecnology={"React JS"} img={projectOne} onClick={null}/>
-                <ProjectCard title={"Cirse e-commerce"} tecnology={"Javascript"} img={projectTwo}/>
-                <ProjectCard title={"Blockbuster e-commerce"} tecnology={"React JS"} img={projectThree}/>
-                <ProjectCard title={"Lilhué"} tecnology={"HTML | CSS"} img={projectFour}/>
-                <ProjectCard title={"Mecatrónica"} tecnology={"Wordpress"} img={projectFive}/>
-                <ProjectCard title={"Hola"} tecnology={"HTML"} img={projectSix}/>
+                {PROJECTS.map((project) => {
+                    return(
+                        <ProjectCard
+                        key={project.id}
+                        title={project.title}
+                        tecnology={project.tecnology}
+                        img={project.img}
+                        onClick={() => renderProjectPage(project.id)}
+                        />
+                    )
+                })}
             </div>
-
         </div>
     );
 }

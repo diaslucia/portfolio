@@ -1,7 +1,58 @@
 @import "../../sass/theme.scss";
 
-.pageContainer{
-    background-color: green;
-    width: 50px;
-    height: 100px;
+.pageAllContainer{
+    background-color: $primaryBackground;
+    -webkit-box-shadow: -5px 5px 8px -1px rgba(0,0,0,0.31);
+    -moz-box-shadow: -5px 5px 8px -1px rgba(0,0,0,0.31);
+    box-shadow: -5px 5px 8px -1px rgba(0,0,0,0.31);
+    width: 70vw;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    .exit{
+        font-size:$title;
+        color: $primaryTitle;
+        margin: $small 0px 0px $small;
+    }
+    .pageContainer{
+        width: 70vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .pageInfoContainer{
+            margin: 0px $large;
+            h1{
+                @include titleFont($title);
+                color: $primaryTitle;
+                margin-top: $large;
+            }
+            h2{
+                @include textFont($text);
+                color: $primaryText;
+                margin-bottom: $large;
+            }
+            p{
+                @include textFont($text);
+                color: $primaryText;
+                width: 80%;
+                margin-bottom: $large;
+            }
+                a {
+                    padding-right: $medium;
+                    font-size: $title;
+                    color: $primaryTitle;
+                }
+            
+        }
+        .pageImgContainer{
+            img{
+                width: 600px;
+            }
+        }
+    }
 }
+
