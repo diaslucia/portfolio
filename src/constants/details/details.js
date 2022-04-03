@@ -1,3 +1,10 @@
+import page1 from "../../assets/page1.png";
+import page2 from "../../assets/page2.png";
+import page3 from "../../assets/page3.png";
+import page4 from "../../assets/page4.png";
+import page5 from "../../assets/page5.png";
+import page6 from "../../assets/page1.png";
+
 export const DETAILS = [
     {
         id: 1,
@@ -5,7 +12,8 @@ export const DETAILS = [
         tecnology: "React JS",
         description: "jahsdkjahsdkjash",
         github: "https://github.com/jmr85/consultoria",
-        link: "https://natali.ruizdegalarreta.com.ar/"
+        link: "https://natali.ruizdegalarreta.com.ar/",
+        img: page1
     },
     {
         id: 2,
@@ -13,7 +21,8 @@ export const DETAILS = [
         tecnology: "Javascript",
         description: "jahsdkjahsdkjash",
         github: "https://github.com/diaslucia/cirse",
-        link: "https://diaslucia.github.io/cirse/"
+        link: "https://diaslucia.github.io/cirse/",
+        img: page2
     },
     {
         id: 3,
@@ -21,7 +30,8 @@ export const DETAILS = [
         tecnology: "React JS",
         description: "jahsdkjahsdkjash",
         github: "https://github.com/diaslucia/virtual-blockbuster",
-        link: "https://blockbuster-virtual.herokuapp.com/"
+        link: "https://blockbuster-virtual.herokuapp.com/",
+        img: page3
     },
     {
         id: 4,
@@ -29,14 +39,16 @@ export const DETAILS = [
         tecnology: "HTML | CSS",
         description: "jahsdkjahsdkjash",
         github: "https://github.com/diaslucia/lilhue",
-        link: "https://diaslucia.github.io/lilhue/"
+        link: "https://diaslucia.github.io/lilhue/",
+        img: page4
     },
     {
         id: 5,
         title: "Mecatrónica",
         tecnology: "Wordpress",
         description: "jahsdkjahsdkjash",
-        link: "https://mecatronicadiesel.com/"
+        link: "https://mecatronicadiesel.com/",
+        img: page5
     },
     {
         id: 6,
@@ -44,6 +56,7 @@ export const DETAILS = [
         tecnology: "React JS",
         description: "jahsdkjahsdkjash",
         github: "https://github.com/jmr85/consultoria",
-        link: "https://natali.ruizdegalarreta.com.ar/"
+        link: "https://natali.ruizdegalarreta.com.ar/",
+        img: page6
     }
 ]

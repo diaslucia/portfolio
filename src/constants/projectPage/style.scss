@@ -16,19 +16,19 @@
         font-size:$title;
         color: $primaryTitle;
         margin: $small 0px 0px $small;
+        cursor: pointer;
     }
     .pageContainer{
         width: 70vw;
         display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: space-between;
         .pageInfoContainer{
             margin: 0px $large;
             h1{
                 @include titleFont($title);
                 color: $primaryTitle;
-                margin-top: $large;
+                margin-top: 50px;
             }
             h2{
                 @include textFont($text);
@@ -41,12 +41,12 @@
                 width: 80%;
                 margin-bottom: $large;
             }
-                a {
-                    padding-right: $medium;
-                    font-size: $title;
-                    color: $primaryTitle;
-                }
-            
+            a {
+                padding-right: $medium;
+                font-size: $title;
+                color: $primaryTitle;
+                cursor: pointer;
+            }
         }
         .pageImgContainer{
             img{

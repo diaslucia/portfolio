@@ -22,4 +22,11 @@
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 30px;
     }
+    .projectsDetailContainer{
+        display: flex;
+    }
+}
+
+.displayNone {
+    display: none;
 }

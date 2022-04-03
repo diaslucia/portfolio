@@ -19,9 +19,9 @@ const NavBar = () => {
         <nav className={navbar ? "nav activeNav" : "nav"}>
             <div className="navBar">
                 <Link activeClass="active" className="link" to="about" spy={true} smooth={true} offset={0} duration={500}>Sobre mi</Link>
-                <Link activeClass="active" className="link" to="skills" spy={true} smooth={true} offset={30} duration={500}>Hablidades</Link>
+                <Link activeClass="active" className="link" to="skills" spy={true} smooth={true} offset={0} duration={500}>Hablidades</Link>
                 <Link activeClass="active" className="link" to="projects" spy={true} smooth={true} offset={0} duration={500}>Proyectos</Link>
-                <Link activeClass="active" className="link" to="contact" spy={true} smooth={true} offset={30} duration={500}>Contacto</Link>
+                <Link activeClass="active" className="link" to="contact" spy={true} smooth={true} offset={0} duration={500}>Contacto</Link>
             </div>
             <div className="lang">
                 <a href="#esp">Esp</a>
