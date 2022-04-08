@@ -17,6 +17,10 @@
         color: $primaryTitle;
         margin: $small 0px 0px $small;
         cursor: pointer;
+        transition: all 600ms;
+        &:hover {
+            transform: scale(1.1) Rotate(90deg);
+        }
     }
     .pageContainer{
         width: 70vw;
@@ -46,6 +50,12 @@
                 font-size: $title;
                 color: $primaryTitle;
                 cursor: pointer;
+                .icon{
+                    transition: all 600ms;
+                    &:hover {
+                        transform: scale(1.2)
+                    }
+                }
             }
         }
         .pageImgContainer{

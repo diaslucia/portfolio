@@ -2,27 +2,59 @@
 
 .aboutContainer{
     background-color: $secondaryBackground;
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    .aboutTitleContainer{
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        .aboutTitle{
-            @include titleFont($title);
-            color: $primaryTitle;
-            text-align: center;
-            padding: $large;
-        }
-    }
     .aboutImgContainer{
         img{
             height: 500px;
         }
     }
+    .aboutInfoContainer{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .aboutTitleContainer{
+            .aboutTitle{
+                @include titleFont($title);
+                color: $primaryTitle;
+                text-align: center;
+                margin: $large;
+                padding: 0px;
+            }
+        }
+        .aboutParContainer{
+            width: 30vw;
+            .aboutText{
+                @include textFont($text);
+                color: $primaryText;
+                text-align: justify;
+            }
+        }
+        .aboutButtonContainer{
+            margin: $large;
+        }
+    }
 }
 
+.aboutMore-enter {
+    opacity: 0;
+}
+
+.aboutMore-enter-active {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.aboutMore-exit {
+    opacity: 0;
+}
+
+.aboutMore-exit-active {
+    opacity: 1;
+    transition: opacity 1s;
+}

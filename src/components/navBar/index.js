@@ -1,5 +1,6 @@
+import React,{ useState } from "react";
 import style from "./style.scss";
-import { useState } from "react";
+
 import { Link } from "react-scroll";
 
 const NavBar = () => {

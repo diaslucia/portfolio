@@ -1,0 +1,70 @@
+@import "../../sass/theme.scss";
+
+.border {
+ background-color: transparent;
+ border: 2px solid $primaryTitle;
+ box-sizing: border-box;
+ color: $secondary;
+ cursor: pointer;
+ display: inline-block;
+ margin: 0;
+ outline: none;
+ overflow: visible;
+ padding: 10px 10px;
+ position: relative;
+ text-align: center;
+ text-decoration: none;
+ text-transform: none;
+ transition: all 0.3s ease-in-out;
+ user-select: none;
+}
+
+.border .top-key {
+ height: 2px;
+ width: 50px;
+ top: -2px;
+ left: 0.625rem;
+ position: absolute;
+ background: #ffffff;
+ transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.border .bottom-key-1 {
+ height: 2px;
+ width: 50px;
+ right: 1.875rem;
+ bottom: -2px;
+ position: absolute;
+ background: #ffffff;
+ transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.border .bottom-key-2 {
+ height: 2px;
+ width: 10px;
+ right: 12px;
+ bottom: -2px;
+ position: absolute;
+ background: #ffffff;
+ transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.border:hover {
+ color: white;
+}
+
+.border:hover::before {
+ width: 0.9375rem;
+ background: white;
+}
+
+.border:hover .top-key {
+ left: -2px;
+ width: 0px;
+}
+
+.border:hover .bottom-key-1,
+ .border:hover .bottom-key-2 {
+ right: 0;
+ width: 0;
+}

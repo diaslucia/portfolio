@@ -53,3 +53,18 @@ $npm start
 ```
 $npm install node-sass
 ```
+
+### React Transition Group
+
+1. Install React Transition Group. [More information here](https://reactcommunity.org/react-transition-group/)
+```
+$npm install react-transition-group --save
+```
+### Animate
+
+1. Install React Animation On Scroll. [More information here](https://www.npmjs.com/package/react-animation-on-scroll)
+```
+$npm install react-animation-on-scroll --save
+$npm install --save animate.css
+```
+

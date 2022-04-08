@@ -1,0 +1,12 @@
+@import "../../sass/theme.scss";
+
+
+.aboutParContainer{
+    width: 30vw;
+    .aboutText{
+        @include textFont($text);
+        color: $primaryText;
+        text-align: justify;
+    }
+}
+
