@@ -15,8 +15,12 @@ import Border from "../../constants/border/index";
 import AboutMore from "../aboutMore/index";
 import AboutLess from "../aboutLess/index";
 
+/* Translations */
+import { useTranslation } from "react-i18next"
+
 const About = () => {
     const [showMore, setShowMore] = useState(false);
+    const [t] = useTranslation("global");
 
     return(
         <div className="aboutContainer" id="about">
@@ -31,7 +35,7 @@ const About = () => {
 
                 <div className="aboutTitleContainer">
                     <AnimationOnScroll animateIn="animate__slideInDown">
-                        <h1 className="aboutTitle">Sobre mi</h1>
+                        <h1 className="aboutTitle">{t("about.title")}</h1>
                     </AnimationOnScroll>
                 </div>
 
@@ -45,9 +49,9 @@ const About = () => {
 
                 <div className="aboutButtonContainer">
                     {showMore ? 
-                    <Button title="Leer menos" onClick={() => setShowMore(false)}/>
+                    <Button title={t("about.less")} onClick={() => setShowMore(false)}/>
                     :
-                    <Button title="Leer más" onClick={() => setShowMore(true)}/>
+                    <Button title={t("about.more")} onClick={() => setShowMore(true)}/>
                     }
                 </div>
 

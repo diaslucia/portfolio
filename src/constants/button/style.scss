@@ -2,11 +2,11 @@
 
 /* From cssbuttons.io by @Cevorob */
 .fancy {
-    @include titleFont($button);
+@include titleFont($button);
  background-color: transparent;
- border: 2px solid $primaryTitle;
+ border: 2px solid $third;
  box-sizing: border-box;
- color: $secondary;
+ color: $third;
  cursor: pointer;
  display: inline-block;
  font-weight: 700;
@@ -31,7 +31,7 @@
  transition: all 0.3s ease-in-out;
  text-transform: uppercase;
  text-decoration: none;
- color: $primaryTitle;
+ color: $third;
 }
 
 .fancy .top-key {
@@ -40,7 +40,7 @@
  top: -2px;
  left: 0.625rem;
  position: absolute;
- background: #ffffff;
+ background: $secondary;
  transition: width 0.5s ease-out, left 0.3s ease-out;
 }
 
@@ -50,7 +50,7 @@
  right: 1.875rem;
  bottom: -2px;
  position: absolute;
- background: #ffffff;
+ background: $secondary;
  transition: width 0.5s ease-out, right 0.3s ease-out;
 }
 
@@ -60,22 +60,22 @@
  right: 0.625rem;
  bottom: -2px;
  position: absolute;
- background: #ffffff;
+ background: $secondary;
  transition: width 0.5s ease-out, right 0.3s ease-out;
 }
 
 .fancy:hover {
- color: white;
- background: $primaryTitle;
+ color: $third;
+ background: $third;
 }
 
 .fancy:hover::before {
  width: 0.9375rem;
- background: white;
+ background: $secondary;
 }
 
 .fancy:hover .text {
- color: white;
+ color: $secondary;
 }
 
 .fancy:hover .top-key {

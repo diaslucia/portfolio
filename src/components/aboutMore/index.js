@@ -13,30 +13,35 @@ import me6 from "../../assets/me6.png";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import "animate.css/animate.min.css";
 
+/* Translations */
+import { useTranslation } from "react-i18next"
+
 const AboutMore = ({ inOpenPage }) => {
+    const [t] = useTranslation("global");
+    
     return(     
         <div className="aboutParContainer">
-            <p className="aboutText">
-                Mi nombre es Lucia y soy graduada de la carrera <strong>Desarrollo Front-End</strong> en Coderhouse,
-                donde sigo estudiando para poder perfeccionarme y aprender nuevas tecnologías.
-            </p>
-            <p className="aboutText">
-                Tengo un nivel de <strong>inglés avanzado</strong> gracias a que viví y trabajé en Estados Unidos por dos años y medios.
-            </p>
-            <p className="aboutText">
-                Me considero una persona muy activa y curiosa, disfruto el proceso de organizar mi área de trabajo,
-                investigar los requisitos necesarios y ejecutar cada uno de mis proyectos.
-            </p>
-            <p className="aboutText">
-                En 2018, me uní al programa Au Pair dónde viví y trabajé con una familia Norteamericana.
-                La experiencia de estar lejos de tu casa, en un país con costumbres e idioma distintos,
-                me convirtió en una persona más segura, abierta y flexible al cambio. 
-                En este viaje, tuve el placer de conocer a muchas personas en el área de tecnología que me inspiraron a querer seguir por este camino.
-            </p>
-            <p className="aboutText">
-                Cuando no estoy desarrollando, me gusta pasar tiempo al aire libre con mis gatos,
-                andar en rollers o leer algún libro de mi autor favorito, Stephen King.
-            </p>
+            <div className="aboutInnerParContainer">
+                <p className="aboutText">{t("about.text1")}</p>
+                <p className="aboutBold">{t("about.bold1")}</p>
+                <p className="aboutText">{t("about.text2")}</p>
+            </div>
+            <div className="aboutInnerParContainer">
+                <p className="aboutText">{t("about.text3")}</p>
+                <p className="aboutBold">{t("about.bold2")}</p>
+                <p className="aboutText">{t("about.text4")}</p>
+            </div>
+            <div className="aboutInnerParContainer">
+                <p className="aboutText">{t("about.text5")}</p>
+            </div>
+            <div className="aboutInnerParContainer">
+                <p className="aboutText">{t("about.text6")}</p>
+                <p className="aboutBold">{t("about.bold3")}</p>
+                <p className="aboutText">{t("about.text7")}</p>
+            </div>
+            <div className="aboutInnerParContainer">
+                <p className="aboutText">{t("about.text8")}</p>
+            </div>
             <div className="aboutLogosContainer">
                 <AnimationOnScroll animateIn="animate__zoomIn" delay={100}>
                     <img src={me1} alt="icono cat gato"/>

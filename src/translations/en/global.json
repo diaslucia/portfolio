@@ -1,0 +1,47 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "home": {
+        "title": "Hi! I'm Lucia Dias",
+        "subtitle": "Front-End Developer"
+    },
+    "about": {
+        "title": "About",
+        "text1": "My name is Lucia and I'm a",
+        "bold1": " Front-End Developer ",
+        "text2": "graduated from Coderhouse, school where I'm still studying to perfect myself and learn about new tecnologies.",
+        "text3": "My",
+        "bold2": " english level is advanced ",
+        "text4": " since I've lived and worked in the United States for two years and a half.",
+        "text5": "I consider myself an active and curious person! I enjoy organizing my workspace, investigating about the tools and tecnologies I need and the ejecution of every single one of my projects.",
+        "text6": "In 2018, I joined the Au Pair program, where I worked and lived with an American family. Being away from home, in a country with a different culture and language, shaped me into a more",
+        "bold3": " confident, open-minded and flexible person",
+        "text7": ". On this trip, I had the oportunity to meet a lot of people in the IT business who inspired me to follow this path.",
+        "text8": "When I'm not coding, I like speding time outside with my cats, skate in my rollerblades or read Stephen King novels.",
+        "more": "Read more",
+        "less": "Read less"
+    },
+    "skills": {
+        "title": "Skills"
+    },
+    "projects": {
+        "title": "My Projects"
+    },
+    "contact": {
+        "title":"Let's work together!",
+        "subtitle": "¿Did you like what you saw?",
+        "whatsapp": "Message me on whatssap",
+        "email": "Send me an email",
+        "linkedin": "Connect with me in LinkedIn"
+    },
+    "footer": {
+        "firstline": "This website was made by Lucia Dias",
+        "secondline": "To visit the portfolio repository ",
+        "thirdline": "click here"
+    }
+}

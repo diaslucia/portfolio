@@ -1,0 +1,22 @@
+@import "../../sass/theme.scss";
+
+.footerContainer{
+    height: 4vh;
+    background-color: $red;
+    padding: $small;
+    p{
+        @include textFont(15px);
+        color: $thirdBackground;
+        font-style: oblique;
+        text-align: center;
+        margin: 0px;
+        letter-spacing:1px;
+        a{
+            color: $third;
+            text-decoration: none;
+            &:hover {
+                text-decoration:underline
+            }
+        }
+    }
+}

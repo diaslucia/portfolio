@@ -14,21 +14,22 @@ import "animate.css/animate.min.css";
 import { PROJECTS } from "../../constants/projects/projects";
 import { DETAILS } from "../../constants/details/details";
 
+/* Translations */
+import { useTranslation } from "react-i18next"
+
 const Projects = () => {
+    const [t] = useTranslation("global");
     const [pageItem,setPageItem] = useState([]);
     const [openPage, setOpenPage] = useState(false);
-    const [openProjects, setOpenProjects] = useState(true);
 
     const renderProjectPage = (id) => {
         let project = DETAILS.filter((page) => page.id === id);
         setPageItem(project);
         setOpenPage(true);
-        setOpenProjects(false);
     }
 
     const closePage = () => {
         setOpenPage(false);
-        setOpenProjects(true);
     }
 
     return(
@@ -36,7 +37,7 @@ const Projects = () => {
 
             <div className="projectsTitleContainer">
             <AnimationOnScroll animateIn="animate__slideInDown">
-                <h1 className="projectsTitle">Mis Proyectos</h1>
+                <h1 className="projectsTitle">{t("projects.title")}</h1>
             </AnimationOnScroll>
             </div>
 

@@ -3,10 +3,24 @@
 
 .aboutParContainer{
     width: 30vw;
+    .aboutInnerParContainer{
+        padding-bottom: $small;
+        text-align: justify;
+    }
     .aboutText{
+        display: inline;
         @include textFont($text);
         color: $primaryText;
         text-align: justify;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    .aboutBold{
+        display: inline;
+        font-weight: bold;
+        margin: 0px;
+        padding: 0px;
+        text-align: justify;
     }
 }
-

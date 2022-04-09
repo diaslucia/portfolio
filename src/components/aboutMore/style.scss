@@ -2,10 +2,21 @@
 
 .aboutParContainer{
     width: 30vw;
+    .aboutInnerParContainer{
+        padding-bottom: $small;
+        text-align: justify;
+    }
     .aboutText{
         @include textFont($text);
+        display: inline;
         color: $primaryText;
         text-align: justify;
+    }
+    .aboutBold{
+        display: inline;
+        font-weight: bold;
+        margin: 0px;
+        padding: 0px;
     }
     .aboutLogosContainer{
         display: flex;

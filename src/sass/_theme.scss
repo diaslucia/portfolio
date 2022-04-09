@@ -1,16 +1,17 @@
 // Colors
 
-$main: #f0d3ec;
+$main: #61193d;
 $secondary: #ffffff;
-$third: rgb(97, 25, 61);
-$primaryTitle: #bb4b81;
-$secondaryTitle: #212121;
-$thirdTitle: #ffffff;
+$third: #bb4d16;
+$primaryTitle: #95355B;
+$secondaryTitle: #ffffff;
+$thirdTitle: #212121;
 $primaryText: #212121;
 $secondaryText: #ffffff;
-$primaryBackground: #fff2fd;
-$secondaryBackground: #ffffff;
-$thirdBackground:rgb(97, 25, 61);
+$primaryBackground: #ffffff;
+$secondaryBackground: #61193d;
+$thirdBackground:#f1ecea;
+$red: #240016;
 
 // Margin Padding
 
@@ -21,8 +22,8 @@ $small: 17px;
 
 // Font Size
 
-$title: 21px;
-$text: 16px;
+$title: 23px;
+$text: 17px;
 $button: 13px;
 
 //Fonts
@@ -30,13 +31,13 @@ $button: 13px;
 @mixin titleFont ($size) {
     font-size: $size;
     font-family: 'Mulish', sans-serif;
-    letter-spacing: 5px;
+    letter-spacing: 6px;
     text-transform: uppercase;
 }
 
 @mixin textFont ($size) {
     font-size: $size;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Anek Tamil', sans-serif;
 }
 
 @mixin navFont ($size) {

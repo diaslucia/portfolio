@@ -1,7 +1,7 @@
 @import "../../sass/theme.scss";
 
 .skillsContainer{
-    background-color: $thirdBackground;
+    background-color: $secondaryBackground;
     height: 70vh;
     width: 100%;
     display: flex;
@@ -11,7 +11,7 @@
     .skillsTitleContainer{
         .skillsTitle{
             @include titleFont($title);
-            color: $thirdTitle;
+            color: $secondaryTitle;
             text-align: center;
             padding: $large;
         }
@@ -27,6 +27,10 @@
             img{
                 width: 60px;
                 margin: $small;
+                transition: all 0.7s;
+                &:hover{
+                    transform: scale(1.2);
+                }
             }
             p{
                 @include textFont($text);

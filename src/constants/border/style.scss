@@ -2,7 +2,7 @@
 
 .border {
  background-color: transparent;
- border: 2px solid $primaryTitle;
+ border: 2px solid $third;
  box-sizing: border-box;
  color: $secondary;
  cursor: pointer;
@@ -25,7 +25,7 @@
  top: -2px;
  left: 0.625rem;
  position: absolute;
- background: #ffffff;
+ background: $secondary;
  transition: width 0.5s ease-out, left 0.3s ease-out;
 }
 
@@ -35,7 +35,7 @@
  right: 1.875rem;
  bottom: -2px;
  position: absolute;
- background: #ffffff;
+ background: $secondary;
  transition: width 0.5s ease-out, right 0.3s ease-out;
 }
 
@@ -45,17 +45,17 @@
  right: 12px;
  bottom: -2px;
  position: absolute;
- background: #ffffff;
+ background: $secondary;
  transition: width 0.5s ease-out, right 0.3s ease-out;
 }
 
 .border:hover {
- color: white;
+ color: $secondary;
 }
 
 .border:hover::before {
  width: 0.9375rem;
- background: white;
+ background: $secondary;
 }
 
 .border:hover .top-key {

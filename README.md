@@ -37,10 +37,6 @@ $cd yourProjectDirectory
 ```
 $npm install
 ```
-4. Install Font Awesome Icons
-```
-npm i --save @fortawesome/fontawesome-svg-core  @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons
-```
 
 5. Ejecute the app (and close it with Ctrl + C)
 ```
@@ -52,6 +48,12 @@ $npm start
 1. Install SASS. [More information here](https://create-react-app.dev/docs/adding-a-sass-stylesheet/)
 ```
 $npm install node-sass
+```
+### Font Awesome Icons
+
+1. Install Font Awesome Icons. [More information here](https://fontawesome.com/icons)
+```
+$npm i --save @fortawesome/fontawesome-svg-core  @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons
 ```
 
 ### React Transition Group
@@ -67,4 +69,13 @@ $npm install react-transition-group --save
 $npm install react-animation-on-scroll --save
 $npm install --save animate.css
 ```
+### I18Next
+
+1. Install I18Next for traductions. [More information here](https://www.i18next.com/)
+```
+$npm i i18next
+$npm i react-i18next
+```
+
+
 

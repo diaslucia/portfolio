@@ -12,16 +12,31 @@ const ProjectPage = ({ title, tecnology, description, github, link, onClick, img
             <a className="exit" onClick={onClick}><FontAwesomeIcon className="icon" icon={faXmark}/></a>
             <div className="pageContainer">
                 <div className="pageInfoContainer">
+
                     <AnimationOnScroll animateIn="animate__slideInDown" duration="2">
                         <h1>{title}</h1>
                     </AnimationOnScroll>
                     <h2>{tecnology}</h2>
                     <p>{description}</p>
-                    <a href={github} target="_blank"><FontAwesomeIcon className="icon" icon={faGithub}/></a>
-                    <a href={link} target="_blank"><FontAwesomeIcon className="icon" icon={faPaperclip}/></a>
+
+                    <div className="pageIconsContainer">
+
+                        <div className="pageIconContainer">
+                            <AnimationOnScroll animateIn="animate__fadeInDown" delay={100}>
+                                <a href={github} target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon" icon={faGithub}/></a>
+                            </AnimationOnScroll>
+                        </div>
+                        <div className="pageIconContainer">
+                            <AnimationOnScroll animateIn="animate__fadeInDown" delay={100}>
+                                <a href={link} target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon" icon={faPaperclip}/></a>
+                            </AnimationOnScroll>
+                        </div>
+
+                    </div>
+                    
                 </div>
                 <div className="pageImgContainer">
-                    <a href={link}><img src={img} alt="website"/></a>
+                    <a href={link} target="_blank" rel="noreferrer"><img src={img} alt="website"/></a>
                 </div>
             </div>
         </div>

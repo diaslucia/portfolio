@@ -28,7 +28,7 @@
             align-items: center;
             h2{
                 @include titleFont($text);
-                color: $secondaryText;
+                color: $secondaryTitle;
                 text-align: center;
                 margin: $small 0px;
             }
