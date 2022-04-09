@@ -12,7 +12,6 @@ import global_en from "./translations/en/global.json";
 
 i18next.init({
   interpolation: { escapeValue: false },
-  debug: true,
   lng: "es",
   resources: {
     es: { global: global_es},

@@ -8,24 +8,8 @@ import { useTranslation } from "react-i18next"
 
 const NavBar = () => {
     const [navbar,setNavbar] = useState(false);
-    const [selectProject, setSelectProject] = useState(false);
     const [t, i18n] = useTranslation("global");
-
-    const handleLanguageChanged = useCallback(() => {
-        changeLang();
-    }, []);
-    
-    useEffect(() => {
-        i18n.on('languageChanged', handleLanguageChanged);
-        return () => {
-            i18n.off('languageChanged', handleLanguageChanged);
-        };
-    }, [handleLanguageChanged]);
-
-    const changeLang = () => {
-        setSelectProject(!selectProject);
-    }
-    console.log(selectProject)
+    const [lang, setLang] = useState(false);
 
     const changeNavbar = () => {
         if(window.scrollY >= 50){
@@ -37,6 +21,18 @@ const NavBar = () => {
 
     window.addEventListener("scroll", changeNavbar);
 
+    const handleClick = (e) => {
+        e.preventDefault();
+        setLang(!lang);
+        if(lang === true) {
+            i18n.changeLanguage("es")
+            document.querySelector(".langSpan").classList.remove("langSpanActive");
+        } else {
+            i18n.changeLanguage("en")
+            document.querySelector(".langSpan").classList.add("langSpanActive");
+        }
+    }
+
     return(
         <nav className={navbar ? "nav activeNav" : "nav"}>
             <div className="navBar">
@@ -47,8 +43,13 @@ const NavBar = () => {
                 <Link activeClass="active" className="link" to="contact" spy={true} smooth={true} offset={0} duration={500}>{t("navbar.contact")}</Link>
             </div>
             <div className="lang">
-                <button onClick={() => i18n.changeLanguage("es")}>ES</button>
-                <button onClick={() => i18n.changeLanguage("en")}>EN</button>
+                <div className="langContainer">
+                    <p className="langText">ES</p>
+                    <div className="toggle" onClick={handleClick}>
+                        <span className="langSpan"></span>
+                    </div>
+                    <p className="langText">EN</p>
+                </div>
             </div>
         </nav>
     );
