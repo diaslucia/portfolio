@@ -8,38 +8,38 @@ import img6 from "../../assets/p1.png"
 export const PROJECTS = [
     {
         id: 1,
-        title: "Consultoría Integral",
+        title: "Landing page",
         tecnology: "React JS",
         img: img1
     },
     {
         id: 2,
-        title: "Cirse e-commerce",
+        title: "E-commerce",
         tecnology: "Javascript",
         img: img2
     },
     {
         id: 3,
-        title: "Blockbuster e-commerce",
+        title: "E-commerce",
         tecnology: "React JS",
         img: img3
     },
     {
         id: 4,
-        title: "Lilhué Landing Page",
+        title: "Landing Page",
         tecnology: "HTML | CSS",
         img: img4
     },
     {
         id: 5,
-        title: "Mecatrónica",
+        title: "Landing Page",
         tecnology: "Wordpress",
         img: img5
     },
     {
         id: 6,
-        title: "Cirse e-commerce",
-        tecnology: "Javascript",
+        title: "Portofolio",
+        tecnology: "React JS",
         img: img6
     },
 ]

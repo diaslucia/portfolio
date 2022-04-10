@@ -2,7 +2,7 @@
     "navbar": {
         "home": "Inicio",
         "about": "Sobre mi",
-        "skills": "Hablidades",
+        "skills": "Herramientas",
         "projects": "Proyectos",
         "contact": "Contacto"
     },
@@ -27,7 +27,7 @@
         "less": "Leer menos"
     },
     "skills": {
-        "title": "Habilidades"
+        "title": "Herramientas"
     },
     "projects": {
         "title": "Mis Proyectos"

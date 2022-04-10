@@ -13,19 +13,26 @@ import "animate.css/animate.min.css";
 /* Data */
 import { PROJECTS } from "../../constants/projects/projects";
 import { DETAILS } from "../../constants/details/details";
+import { DETAILSEN } from "../../constants/detailsEn/details";
 
 /* Translations */
 import { useTranslation } from "react-i18next"
 
-const Projects = () => {
+const Projects = ({ lang }) => {
     const [t] = useTranslation("global");
     const [pageItem,setPageItem] = useState([]);
     const [openPage, setOpenPage] = useState(false);
 
     const renderProjectPage = (id) => {
-        let project = DETAILS.filter((page) => page.id === id);
-        setPageItem(project);
-        setOpenPage(true);
+        if(lang === false){
+            let project = DETAILS.filter((page) => page.id === id);
+            setPageItem(project);
+            setOpenPage(true);
+        }else{
+            let project = DETAILSEN.filter((page) => page.id === id);
+            setPageItem(project);
+            setOpenPage(true);
+        }
     }
 
     const closePage = () => {
@@ -36,18 +43,17 @@ const Projects = () => {
         <div className="projectsContainer" id="projects">
 
             <div className="projectsTitleContainer">
-            <AnimationOnScroll animateIn="animate__slideInDown">
-                <h1 className="projectsTitle">{t("projects.title")}</h1>
-            </AnimationOnScroll>
+                <AnimationOnScroll animateIn="animate__slideInDown">
+                    <h1 className="projectsTitle">{t("projects.title")}</h1>
+                </AnimationOnScroll>
             </div>
 
             <div>
-            
+
                 <div className={openPage ? "displayNone" : "projectsMainContainer"}>
-                    
                     {PROJECTS.map((project) => {
                         return(
-                            <AnimationOnScroll animateIn="animate__fadeIn" key={project.id}>
+                            <AnimationOnScroll animateIn="animate__fadeIn" key={project.id.toString()}>
                                 <ProjectCard
                                 title={project.title}
                                 tecnology={project.tecnology}
@@ -57,13 +63,12 @@ const Projects = () => {
                             </AnimationOnScroll>
                         )
                     })}
-                    
                 </div>
             
                 <div className={openPage ? "projectsDetailContainer" : "displayNone"}>
                     {pageItem.map((page) => {
                         return(
-                            <CSSTransition in={openPage} timeout={1000} classNames="alert" key={page.id}>
+                            <CSSTransition in={openPage} timeout={1000} classNames="alert" key={page.id.toString()}>
                                 <ProjectPage
                                 title={page.title}
                                 tecnology={page.tecnology}
@@ -76,8 +81,8 @@ const Projects = () => {
                         )
                     })}
                 </div>
-            </div>
 
+            </div>
         </div>
     );
 }

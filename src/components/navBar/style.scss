@@ -10,6 +10,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    z-index: 6;
     .navBar{
         margin-left: auto;
         .link{
@@ -47,6 +48,9 @@
                 display: block;
                 border-radius: 100px;
                 position: relative;
+                -webkit-box-shadow: -5px 5px 8px -1px rgba(0,0,0,0.31);
+                -moz-box-shadow: -5px 5px 8px -1px rgba(0,0,0,0.31);
+                box-shadow: -5px 5px 8px -1px rgba(0,0,0,0.31);
                 .langSpan{
                     content: '';
                     position: absolute;

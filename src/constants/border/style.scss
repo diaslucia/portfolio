@@ -2,7 +2,7 @@
 
 .border {
  background-color: transparent;
- border: 2px solid $third;
+ border: 3px solid $third;
  box-sizing: border-box;
  color: $secondary;
  cursor: pointer;
@@ -20,9 +20,9 @@
 }
 
 .border .top-key {
- height: 2px;
+ height: 3px;
  width: 50px;
- top: -2px;
+ top: -3px;
  left: 0.625rem;
  position: absolute;
  background: $secondary;
@@ -30,20 +30,20 @@
 }
 
 .border .bottom-key-1 {
- height: 2px;
+ height: 3px;
  width: 50px;
  right: 1.875rem;
- bottom: -2px;
+ bottom: -3px;
  position: absolute;
  background: $secondary;
  transition: width 0.5s ease-out, right 0.3s ease-out;
 }
 
 .border .bottom-key-2 {
- height: 2px;
+ height: 3px;
  width: 10px;
  right: 12px;
- bottom: -2px;
+ bottom: -3px;
  position: absolute;
  background: $secondary;
  transition: width 0.5s ease-out, right 0.3s ease-out;

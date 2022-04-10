@@ -52,10 +52,10 @@ export const DETAILS = [
     },
     {
         id: 6,
-        title: "Cirse e-commerce",
+        title: "Portfolio Personal",
         tecnology: "React JS",
         description: "jahsdkjahsdkjash",
-        github: "https://github.com/jmr85/consultoria",
+        github: "https://github.com/diaslucia/portfolio",
         link: "https://natali.ruizdegalarreta.com.ar/",
         img: page6
     }
