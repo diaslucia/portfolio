@@ -6,7 +6,6 @@ import ProjectCard from "../../constants/projectCard/index";
 import ProjectPage from "../../constants/projectPage/index";
 
 /* Animations */
-import { CSSTransition } from "react-transition-group";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import "animate.css/animate.min.css";
 
@@ -22,6 +21,8 @@ const Projects = ({ lang }) => {
     const [t] = useTranslation("global");
     const [pageItem,setPageItem] = useState([]);
     const [openPage, setOpenPage] = useState(false);
+
+    console.log(openPage)
 
     const renderProjectPage = (id) => {
         if(lang === false){
@@ -53,14 +54,13 @@ const Projects = ({ lang }) => {
                 <div className={openPage ? "displayNone" : "projectsMainContainer"}>
                     {PROJECTS.map((project) => {
                         return(
-                            <AnimationOnScroll animateIn="animate__fadeIn" key={project.id.toString()}>
-                                <ProjectCard
-                                title={project.title}
-                                tecnology={project.tecnology}
-                                img={project.img}
-                                onClick={() => renderProjectPage(project.id)}
-                                />
-                            </AnimationOnScroll>
+                            <ProjectCard
+                            key={project.id.toString()}
+                            title={project.title}
+                            tecnology={project.tecnology}
+                            img={project.img}
+                            onClick={() => renderProjectPage(project.id)}
+                            />
                         )
                     })}
                 </div>
@@ -68,8 +68,9 @@ const Projects = ({ lang }) => {
                 <div className={openPage ? "projectsDetailContainer" : "displayNone"}>
                     {pageItem.map((page) => {
                         return(
-                            <CSSTransition in={openPage} timeout={1000} classNames="alert" key={page.id.toString()}>
                                 <ProjectPage
+                                openPage={openPage}
+                                key={page.id.toString()}
                                 title={page.title}
                                 tecnology={page.tecnology}
                                 description={page.description}
@@ -77,12 +78,12 @@ const Projects = ({ lang }) => {
                                 img={page.img}
                                 github={page.github}
                                 link={page.link}/>
-                            </CSSTransition>
                         )
                     })}
                 </div>
 
             </div>
+            
         </div>
     );
 }

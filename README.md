@@ -43,35 +43,37 @@ $npm install
 $npm start
 ```
 
+## Libraries
+
 ### SASS
 
-1. Install SASS. [More information here](https://create-react-app.dev/docs/adding-a-sass-stylesheet/)
+1. SASS. [More information here](https://create-react-app.dev/docs/adding-a-sass-stylesheet/)
 ```
 $npm install node-sass
 ```
 ### Font Awesome Icons
 
-1. Install Font Awesome Icons. [More information here](https://fontawesome.com/icons)
+1. Font Awesome Icons. [More information here](https://fontawesome.com/icons)
 ```
 $npm i --save @fortawesome/fontawesome-svg-core  @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons
 ```
 
 ### React Transition Group
 
-1. Install React Transition Group. [More information here](https://reactcommunity.org/react-transition-group/)
+1. React Transition Group. [More information here](https://reactcommunity.org/react-transition-group/)
 ```
 $npm install react-transition-group --save
 ```
 ### Animate
 
-1. Install React Animation On Scroll. [More information here](https://www.npmjs.com/package/react-animation-on-scroll)
+1. React Animation On Scroll. [More information here](https://www.npmjs.com/package/react-animation-on-scroll)
 ```
 $npm install react-animation-on-scroll --save
 $npm install --save animate.css
 ```
 ### I18Next
 
-1. Install I18Next for traductions. [More information here](https://www.i18next.com/)
+1. I18Next for traductions. [More information here](https://www.i18next.com/)
 ```
 $npm i i18next
 $npm i react-i18next

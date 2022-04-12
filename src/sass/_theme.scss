@@ -30,8 +30,8 @@ $button: 13px;
 
 @mixin titleFont ($size) {
     font-size: $size;
-    font-family: 'Mulish', sans-serif;
-    letter-spacing: 6px;
+    font-family: "Mulish", serif;
+    letter-spacing: 5px;
     text-transform: uppercase;
 }
 
