@@ -20,3 +20,27 @@
         }
     }
 }
+
+
+/* Ipads */
+@media only screen and (min-width: 1000px) and (max-width: 1299px) {
+
+    .footerContainer{
+        height: 5vh;
+        p{
+            @include textFont(14px);
+        }
+    }
+
+}
+
+/* Phones */
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+
+    .footerContainer{
+        height: 4vh;
+        p{
+            @include textFont(12px);
+        }
+    } 
+}

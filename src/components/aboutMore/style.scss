@@ -32,9 +32,63 @@
         justify-content:center;
         margin: $small;
         img{
-            margin: $small;
+            margin: 0px $small;
             width: 50px;
             height: 50px;
         }
     }
+}
+
+
+/* Ipads */
+@media only screen and (min-width: 1000px) and (max-width: 1299px) {
+
+    .aboutParContainer{
+        margin: 0px;
+        max-width: 400px;
+        .aboutInnerParContainer{
+            padding-bottom: $extraSmall;
+        }
+        .aboutText{
+            @include textFont($textIpad);
+        }
+        .aboutLogosContainer{
+            margin: $extraSmall;
+            img{
+                margin: 0px $extraSmall;
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
+}
+
+/* Phones */
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+
+    .aboutParContainer{
+        width: auto;
+        margin: 0px 30px;
+        .aboutInnerParContainer{
+            padding-bottom: $extraSmall;
+        }
+        .aboutText{
+            @include textFont($textIpad);
+        }
+        .aboutLogosContainer{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: auto;
+            margin: $extraSmall;
+            img{
+                margin: $extraSmall;
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
 }

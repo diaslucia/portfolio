@@ -49,7 +49,7 @@ const Projects = ({ lang }) => {
                 </AnimationOnScroll>
             </div>
 
-            <div>
+            <div className="projectsGridContainer">
 
                 <div className={openPage ? "displayNone" : "projectsMainContainer"}>
                     {PROJECTS.map((project) => {

@@ -96,3 +96,95 @@
     
 }
 
+/* Ipads */
+@media only screen and (min-width: 1000px) and (max-width: 1299px) {
+
+    .contactContainer{
+        .contactBorder{
+            border: 2px solid $secondary;
+            height: 70vh;
+            width: 70vw;
+            .contactTitleContainer{
+                margin: $large;
+                .contactSubtitle{
+                    @include textFont($textIpad);
+                }
+                .contactTitle{
+                    @include titleFont($titleIpad);
+                }
+            }
+            .contactWaysContainer{
+                margin: $medium;
+                .contactEachContainer{
+                    margin: $medium;
+                    .contactIconContainer{
+                        width: 40px;
+                        height: 40px;
+                        &:hover{
+                            width: 35px;
+                            height: 35px;
+                            border: 2px solid $secondary;
+                            cursor: pointer;
+                        }
+                        .icon{
+                            font-size: 25px;
+                        }
+                    }
+                    p{
+                        @include textFont($textIpad);
+                    }
+                }
+            }
+    
+        }
+        
+    }
+
+}
+
+/* Phones */
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+
+    .contactContainer{
+        height: 93vh;
+        width: auto;
+        .contactBorder{
+            border: 2px solid $secondary;
+            height: 80vh;
+            width: 80vw;
+            .contactTitleContainer{
+                margin: $medium 0px;
+                .contactSubtitle{
+                    @include textFont($textIpad);
+                }
+                .contactTitle{
+                    @include titleFont($titleIpad);
+                }
+            }
+            .contactWaysContainer{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0px;
+                .contactEachContainer{
+                    margin: $extraSmall;
+                    .contactIconContainer{
+                        width: 35px;
+                        height: 35px;
+                        &:hover{
+                            width: 30px;
+                            height: 30px;
+                        }
+                        .icon{
+                            font-size: 25px;
+                        }
+                    }
+                    p{
+                        @include textFont($textIpad);
+                    }
+                }
+            }
+        }
+    }
+
+}

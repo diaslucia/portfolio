@@ -57,3 +57,63 @@
     opacity: 1;
     transition: opacity 1s;
 }
+
+/* Ipads */
+@media only screen and (min-width: 1000px) and (max-width: 1299px) {
+
+    .aboutContainer{
+        min-height: 100vh;
+        height: auto;
+        padding: $large 0px;
+        .aboutImgContainer{
+            img{
+                height: 350px;
+            }
+        }
+        .aboutInfoContainer{
+            padding: 10px 0px;
+            .aboutTitleContainer{
+                .aboutTitle{
+                    @include titleFont($titleIpad);
+                    margin: $medium;
+                }
+            }
+            .aboutButtonContainer{
+                margin: $medium;
+            }
+        }
+    }
+
+}
+
+
+/* Phones */
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+
+    .aboutContainer{
+        min-height: 100vh;
+        height: auto;
+        width: auto;
+        flex-direction: column-reverse;
+        .aboutImgContainer{
+            margin-bottom: $large;
+            img{
+                height: 350px;
+            }
+        }
+        .aboutInfoContainer{
+            padding-top: $large;
+            .aboutTitleContainer{
+                .aboutTitle{
+                    @include titleFont($titleIpad);
+                    margin: $medium;
+                    padding: 0px;
+                }
+            }
+            .aboutButtonContainer{
+                margin: $medium;
+            }
+        }
+    }
+    
+}

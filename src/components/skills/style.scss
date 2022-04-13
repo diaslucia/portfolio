@@ -42,3 +42,58 @@
     }
 }
 
+/* Ipads */
+@media only screen and (min-width: 1000px) and (max-width: 1299px) {
+    
+    .skillsContainer{
+        .skillsTitleContainer{
+            .skillsTitle{
+                @include titleFont($titleIpad);
+                padding: $medium;
+            }
+        }
+        .skillsImgContainer{
+            div{
+                img{
+                    width: 50px;
+                    margin: $small;
+                }
+                p{
+                    @include textFont($textIpad);
+                }
+            } 
+        }
+    }
+
+}
+
+
+/* Phones */
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+
+    .skillsContainer{
+        background-color: $secondaryBackground;
+        min-height: 80vh;
+        height: auto;
+        width: auto;
+        .skillsTitleContainer{
+            .skillsTitle{
+                @include titleFont($titleIpad);
+                padding: $medium;
+            }
+        }
+        .skillsImgContainer{
+            width: 90%;
+            padding-bottom: $medium;
+            div{
+                img{
+                    width: 50px;
+                }
+                p{
+                    @include textFont($textIpad);
+                }
+            } 
+        }
+    }
+
+}

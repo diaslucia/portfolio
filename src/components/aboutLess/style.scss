@@ -26,3 +26,36 @@
         text-align: justify;
     }
 }
+
+/* Ipads */
+@media only screen and (min-width: 1000px) and (max-width: 1299px) {
+
+    .aboutParContainerLess{
+        max-width: 400px;
+        margin: 0px;
+        .aboutInnerParContainer{
+            padding-bottom: $extraSmall;
+            text-align: justify;
+        }
+        .aboutText{
+            @include textFont($textIpad); 
+        }
+    }
+    
+}
+
+/* Phones */
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+
+    .aboutParContainerLess{
+        width: auto;
+        margin: 0px 30px;
+        .aboutInnerParContainer{
+            padding-bottom: $extraSmall;
+        }
+        .aboutText{
+            @include textFont($textIpad);
+        }
+    }
+
+}
