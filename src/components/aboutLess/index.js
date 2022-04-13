@@ -8,7 +8,7 @@ const AboutLess = () => {
     const [t] = useTranslation("global");
 
     return(
-        <div className="aboutParContainer">
+        <div className="aboutParContainerLess">
             <div className="aboutInnerParContainer">
                 <p className="aboutText">{t("about.text1")}</p>
                 <p className="aboutBold">{t("about.bold1")}</p>

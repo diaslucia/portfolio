@@ -1,8 +1,10 @@
 @import "../../sass/theme.scss";
 
 
-.aboutParContainer{
-    width: 30vw;
+.aboutParContainerLess{
+    align-items: flex-start;
+    max-width: 600px;
+    margin: 0px 60px;
     .aboutInnerParContainer{
         padding-bottom: $small;
         text-align: justify;

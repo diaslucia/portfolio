@@ -19,7 +19,7 @@ export const DETAILSEN = [
         id: 2,
         title: "Cirse e-commerce",
         tecnology: "Javascript | Firebase | SASS",
-        description: "This website was my final assignment for my Javascript class. Cirse is a fashion e-commerce, where you can buy dresses and accessories. You have the option to filter products by category, sort them by price and add them to the cart.",
+        description: "This website was my final assignment for my Javascript course. Cirse is a fashion e-commerce, where you can buy dresses and accessories. You have the option to filter products by category, sort them by price and add them to the cart.",
         github: "https://github.com/diaslucia/cirse",
         link: "https://diaslucia.github.io/cirse/",
         img: page2
@@ -28,7 +28,7 @@ export const DETAILSEN = [
         id: 3,
         title: "Blockbuster e-commerce",
         tecnology: "React JS | Firebase | SASS",
-        description: "This website was my final assignment for my React JS class. Blockbuster Virtual is an e-commerce to buy movies and series. You have the option to add the products to the cart and make the purchase. The order gets saved in Firebase and returns a confirmation number.",
+        description: "This website was my final assignment for my React JS course. Blockbuster Virtual is an e-commerce to buy movies and series. You have the option to add the products to the cart and make the purchase. The order gets saved in Firebase and returns a confirmation number.",
         github: "https://github.com/diaslucia/virtual-blockbuster",
         link: "https://blockbuster-virtual.herokuapp.com/",
         img: page3
@@ -37,7 +37,7 @@ export const DETAILSEN = [
         id: 4,
         title: "Lilhué",
         tecnology: "HTML | CSS",
-        description: "This website was my final assignment for my Web Development class. Lilhué is a small business, that offers hand-painted mates. The site has seven sections, a form for consults and orders, and a Whatsapp button.",
+        description: "This website was my final assignment for my Web Development course. Lilhué is a small business, that offers hand-painted mates. The site has seven sections, a form for consults and orders, and a Whatsapp button.",
         github: "https://github.com/diaslucia/lilhue",
         link: "https://diaslucia.github.io/lilhue/",
         img: page4

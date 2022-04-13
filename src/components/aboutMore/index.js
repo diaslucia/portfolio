@@ -21,27 +21,32 @@ const AboutMore = ({ inOpenPage }) => {
     
     return(     
         <div className="aboutParContainer">
-            <div className="aboutInnerParContainer">
-                <p className="aboutText">{t("about.text1")}</p>
-                <p className="aboutBold">{t("about.bold1")}</p>
-                <p className="aboutText">{t("about.text2")}</p>
+            
+            <div className="aboutPar">
+                <div className="aboutInnerParContainer">
+                    <p className="aboutText">{t("about.text1")}</p>
+                    <p className="aboutBold">{t("about.bold1")}</p>
+                    <p className="aboutText">{t("about.text2")}</p>
+                </div>
+                <div className="aboutInnerParContainer">
+                    <p className="aboutText">{t("about.text3")}</p>
+                    <p className="aboutBold">{t("about.bold2")}</p>
+                    <p className="aboutText">{t("about.text4")}</p>
+                </div>
+                <div className="aboutInnerParContainer">
+                    <p className="aboutText">{t("about.text5")}</p>
+                </div>
+
+                <div className="aboutInnerParContainer">
+                    <p className="aboutText">{t("about.text6")}</p>
+                    <p className="aboutBold">{t("about.bold3")}</p>
+                    <p className="aboutText">{t("about.text7")}</p>
+                </div>
+                <div className="aboutInnerParContainer">
+                    <p className="aboutText">{t("about.text8")}</p>
+                </div>
             </div>
-            <div className="aboutInnerParContainer">
-                <p className="aboutText">{t("about.text3")}</p>
-                <p className="aboutBold">{t("about.bold2")}</p>
-                <p className="aboutText">{t("about.text4")}</p>
-            </div>
-            <div className="aboutInnerParContainer">
-                <p className="aboutText">{t("about.text5")}</p>
-            </div>
-            <div className="aboutInnerParContainer">
-                <p className="aboutText">{t("about.text6")}</p>
-                <p className="aboutBold">{t("about.bold3")}</p>
-                <p className="aboutText">{t("about.text7")}</p>
-            </div>
-            <div className="aboutInnerParContainer">
-                <p className="aboutText">{t("about.text8")}</p>
-            </div>
+            
             <div className="aboutLogosContainer">
                 <AnimationOnScroll animateIn="animate__zoomIn" delay={100}>
                     <img src={me1} alt="icono cat gato"/>

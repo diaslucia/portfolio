@@ -19,7 +19,7 @@ export const DETAILS = [
         id: 2,
         title: "Cirse e-commerce",
         tecnology: "Javascript | Firebase | SASS",
-        description: "Este sitio fue mi proyecto final para la materia Javascript. Es una tienda virtual de moda, donde se puede comprar vestidos y accesorios. Cuenta con las opciones de filtrar los productos por categorías o precio, agregar al carrito y realizar la compra.",
+        description: "Este sitio fue mi proyecto final para el curso de Javascript. Es una tienda virtual de moda, donde se puede comprar vestidos y accesorios. Cuenta con las opciones de filtrar los productos por categorías o precio, agregar al carrito y realizar la compra.",
         github: "https://github.com/diaslucia/cirse",
         link: "https://diaslucia.github.io/cirse/",
         img: page2
@@ -28,7 +28,7 @@ export const DETAILS = [
         id: 3,
         title: "Blockbuster e-commerce",
         tecnology: "React JS | Firebase | SASS",
-        description: "Este sitio fue mi proyecto final para la materia React JS. Es una tienda virtual de compra de películas y series. Cuenta con la opción de agregar al carrito y confirmar la compra, guardando la orden en Firebase y retornando el número de orden.",
+        description: "Este sitio fue mi proyecto final para el curso de React JS. Es una tienda virtual de compra de películas y series. Cuenta con la opción de agregar al carrito y confirmar la compra, guardando la orden en Firebase y retornando el número de orden.",
         github: "https://github.com/diaslucia/virtual-blockbuster",
         link: "https://blockbuster-virtual.herokuapp.com/",
         img: page3
@@ -37,7 +37,7 @@ export const DETAILS = [
         id: 4,
         title: "Lilhué",
         tecnology: "HTML | CSS",
-        description: "Este sitio fue mi proyecto final para la materia Desarrollo Web. Es un emprendimiento de dos hermanas que venden mates pintados a mano. Cuenta con siete secciones, un formulario de contacto para enviar consultas y pedidos, y un botón para comunicarse directamente por Whatsapp Web.",
+        description: "Este sitio fue mi proyecto final para el curso de Desarrollo Web. Es un emprendimiento de dos hermanas que venden mates pintados a mano. Cuenta con siete secciones, un formulario de contacto para enviar consultas y pedidos, y un botón para comunicarse directamente por Whatsapp Web.",
         github: "https://github.com/diaslucia/lilhue",
         link: "https://diaslucia.github.io/lilhue/",
         img: page4

@@ -1,7 +1,16 @@
 @import "../../sass/theme.scss";
 
 .aboutParContainer{
-    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 60px;
+    max-width: 600px;
+    .aboutPar{
+        align-self: flex-start;
+    }
+
     .aboutInnerParContainer{
         padding-bottom: $small;
         text-align: justify;
