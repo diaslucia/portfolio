@@ -39,6 +39,7 @@ const Projects = ({ lang }) => {
     const closePage = () => {
         setOpenPage(false);
     }
+    
 
     return(
         <div className="projectsContainer" id="projects">
@@ -68,16 +69,16 @@ const Projects = ({ lang }) => {
                 <div className={openPage ? "projectsDetailContainer" : "displayNone"}>
                     {pageItem.map((page) => {
                         return(
-                                <ProjectPage
-                                openPage={openPage}
-                                key={page.id.toString()}
-                                title={page.title}
-                                tecnology={page.tecnology}
-                                description={page.description}
-                                onClick={closePage}
-                                img={page.img}
-                                github={page.github}
-                                link={page.link}/>
+                            <ProjectPage
+                            openPage={openPage}
+                            key={page.id.toString()}
+                            title={page.title}
+                            tecnology={page.tecnology}
+                            description={page.description}
+                            onClick={closePage}
+                            img={page.img}
+                            github={page.github}
+                            link={page.link}/>
                         )
                     })}
                 </div>

@@ -151,13 +151,17 @@
         .contactBorder{
             border: 2px solid $secondary;
             height: 80vh;
-            width: 80vw;
+            width: 90vw;
             .contactTitleContainer{
                 margin: $medium 0px;
+                flex-direction: column;
+                display: flex;
+                align-items: center;
                 .contactSubtitle{
                     @include textFont($textIpad);
                 }
                 .contactTitle{
+                    text-align: center;
                     @include titleFont($titleIpad);
                 }
             }

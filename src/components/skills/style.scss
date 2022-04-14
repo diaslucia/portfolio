@@ -73,9 +73,9 @@
 
     .skillsContainer{
         background-color: $secondaryBackground;
-        min-height: 80vh;
         height: auto;
         width: auto;
+        padding: $xl 0px;
         .skillsTitleContainer{
             .skillsTitle{
                 @include titleFont($titleIpad);

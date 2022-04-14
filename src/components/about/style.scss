@@ -95,19 +95,20 @@
         height: auto;
         width: auto;
         flex-direction: column-reverse;
+        padding-bottom: $xl;
+        padding-top: $large;
         .aboutImgContainer{
-            margin-bottom: $large;
             img{
                 height: 350px;
             }
         }
         .aboutInfoContainer{
-            padding-top: $large;
+            padding-top: 0px;
             .aboutTitleContainer{
                 .aboutTitle{
                     @include titleFont($titleIpad);
-                    margin: $medium;
-                    padding: 0px;
+                    margin: $extraSmall 0px;
+                    padding: $medium;
                 }
             }
             .aboutButtonContainer{
