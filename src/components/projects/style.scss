@@ -59,7 +59,7 @@
   .projectsContainer{
     height: auto;
     min-height: 100vh;
-    padding: $large 0px;
+    padding: $xl 0px;
     .projectsTitleContainer{
         .projectsTitle{
             @include titleFont($titleIpad);

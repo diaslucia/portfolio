@@ -6,38 +6,65 @@
     height: auto;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-
-    .aboutImgContainer{
+    padding: $xl 0px;
+    
+    .aboutInnerContainer{
         display: flex;
         align-items: center;
-        justify-content: center;
-        img{
-            cursor: default;
-            height: 500px;
-            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-        }
-    }
-    .aboutInfoContainer{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 30px 0px;
-        .aboutTitleContainer{
-            .aboutTitle{
-                @include titleFont($title);
-                color: $primaryTitle;
-                text-align: center;
-                margin: $large;
-                padding: 0px;
+        justify-content: space-evenly;
+        width: 100%;
+        .aboutImgContainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                cursor: default;
+                height: 500px;
+                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
             }
         }
-        .aboutButtonContainer{
-            margin: $large;
+        .aboutInfoContainer{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 0px;
+            .aboutTitleContainer{
+                .aboutTitle{
+                    @include titleFont($title);
+                    color: $primaryTitle;
+                    text-align: center;
+                    margin: $large;
+                    padding: 0px;
+                }
+            }
+            .aboutButtonContainer{
+                margin: $large;
+            }
         }
     }
+
+    .aboutLogosContainer{
+        margin-bottom: auto;
+        width: 100%;
+        background-color: $thirdBackground;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: $xl;
+        padding: $extraSmall 0px;
+        img{
+            margin: 0px $large;
+            width: 50px;
+            height: 50px;
+        }
+    }
+    
 }
 
 .aboutMore-enter {
@@ -64,24 +91,40 @@
     .aboutContainer{
         min-height: 100vh;
         height: auto;
-        padding: $large 0px;
-        .aboutImgContainer{
-            img{
-                height: 350px;
+        padding: $xl 0px;
+        
+        .aboutInnerContainer{
+
+            .aboutImgContainer{
+                img{
+                    height: 350px;
+                }
             }
-        }
-        .aboutInfoContainer{
-            padding: 10px 0px;
-            .aboutTitleContainer{
-                .aboutTitle{
-                    @include titleFont($titleIpad);
+
+            .aboutInfoContainer{
+                padding: 10px 0px;
+                .aboutTitleContainer{
+                    .aboutTitle{
+                        @include titleFont($titleIpad);
+                        margin: $medium;
+                    }
+                }
+                .aboutButtonContainer{
                     margin: $medium;
                 }
             }
-            .aboutButtonContainer{
-                margin: $medium;
+        }
+
+        .aboutLogosContainer{
+            margin: $xl;
+            padding: $extraSmall 0px;
+            img{
+                margin: 0px $large;
+                width: 45px;
+                height: 45px;
             }
         }
+
     }
 
 }
@@ -94,27 +137,40 @@
         min-height: 100vh;
         height: auto;
         width: auto;
-        flex-direction: column-reverse;
-        padding-bottom: $xl;
+        
+        padding-bottom: 0px;
         padding-top: $large;
-        .aboutImgContainer{
-            img{
-                height: 350px;
-            }
-        }
-        .aboutInfoContainer{
-            padding-top: 0px;
-            .aboutTitleContainer{
-                .aboutTitle{
-                    @include titleFont($titleIpad);
-                    margin: $extraSmall 0px;
-                    padding: $medium;
+        
+        .aboutInnerContainer{
+            flex-direction: column-reverse;
+            .aboutImgContainer{
+                img{
+                    height: 350px;
                 }
             }
-            .aboutButtonContainer{
-                margin: $medium;
+            .aboutInfoContainer{
+                padding-top: 0px;
+                .aboutTitleContainer{
+                    .aboutTitle{
+                        @include titleFont($titleIpad);
+                        margin: $extraSmall 0px;
+                        padding: $medium;
+                    }
+                }
+                .aboutButtonContainer{
+                    margin: $medium;
+                }
             }
         }
+        .aboutLogosContainer{
+            margin: $xl;
+            img{
+                margin:$small;
+                width: 40px;
+                height: 40px;
+            }
+        }
+        
     }
     
 }

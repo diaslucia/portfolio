@@ -116,6 +116,10 @@
                         width: 20px;
                         height: 20px;
                     }
+                    .langSpanActive {
+                        left: calc(100% - 3px);
+                        transform: translateX(-100%);
+                    }
                 }
             }
         } 

@@ -27,16 +27,6 @@
         margin: 0px;
         padding: 0px;
     }
-    .aboutLogosContainer{
-        display: flex;
-        justify-content:center;
-        margin: $small;
-        img{
-            margin: 0px $small;
-            width: 50px;
-            height: 50px;
-        }
-    }
 }
 
 
@@ -51,14 +41,6 @@
         }
         .aboutText{
             @include textFont($textIpad);
-        }
-        .aboutLogosContainer{
-            margin: $extraSmall;
-            img{
-                margin: 0px $extraSmall;
-                width: 40px;
-                height: 40px;
-            }
         }
     }
 
@@ -75,20 +57,6 @@
         }
         .aboutText{
             @include textFont($textIpad);
-        }
-        .aboutLogosContainer{
-            display: flex;
-            justify-content:center;
-            align-items: center;
-            flex-wrap: wrap;
-            width: auto;
-            margin: $extraSmall;
-            width: 250px;
-            img{
-                margin: $extraSmall;
-                width: 40px;
-                height: 40px;
-            }
         }
     }
 
