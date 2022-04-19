@@ -4,6 +4,8 @@ import style from "./style.scss";
 /* Img */
 import wallpaper from "../../assets/wall2.png";
 import wallpaper2 from "../../assets/wall3.png";
+import wallpaper3 from "../../assets/wall2phone.png";
+import wallpaper4 from "../../assets/wall3phone.png";
 
 /* Translations */
 import { useTranslation } from "react-i18next"
@@ -42,6 +44,8 @@ const Home = () => {
             </div>
             <img className="wallpaper" src={wallpaper} alt="wallpaper"/>
             <img className="wallpaper2" src={wallpaper2} alt="wallpaper"/>
+            <img className="wallpaper3" src={wallpaper3} alt="wallpaper"/>
+            <img className="wallpaper4" src={wallpaper4} alt="wallpaper"/>
         </div>
     );
 }

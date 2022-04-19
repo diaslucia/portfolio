@@ -50,7 +50,7 @@
     .aboutLogosContainer{
         margin-bottom: auto;
         width: 100%;
-        background-color: $thirdBackground;
+        background-color: transparent;
         display: flex;
         flex-direction: row;
         justify-content:center;
@@ -86,7 +86,7 @@
 }
 
 /* Ipads */
-@media only screen and (min-width: 1000px) and (max-width: 1299px) {
+@media only screen and (min-width: 699px) and (max-width: 1299px) {
 
     .aboutContainer{
         min-height: 100vh;

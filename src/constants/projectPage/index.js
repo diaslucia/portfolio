@@ -13,13 +13,13 @@ import "animate.css/animate.min.css";
 const ProjectPage = ({ title, tecnology, description, github, link, onClick, img }) => {
 
     return(
-        <AnimationOnScroll animateIn="animate__fadeIn" duration="1">
+        <AnimationOnScroll animateIn="animate__fadeIn" duration={2} offset={50} animateOnce={true}>
             <div className="pageAllContainer">
                 <a className="exit" onClick={onClick}><FontAwesomeIcon className="icon" icon={faXmark}/></a>
                 <div className="pageContainer">
                     <div className="pageInfoContainer">
 
-                        <AnimationOnScroll animateIn="animate__slideInDown" duration="2">
+                        <AnimationOnScroll animateIn="animate__slideInDown" duration={2} offset={50} animateOnce={true}>
                             <h1>{title}</h1>
                         </AnimationOnScroll>
                         <h2>{tecnology}</h2>

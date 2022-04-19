@@ -26,7 +26,7 @@ const Skills = () => {
     return(
         <div className="skillsContainer" id="skills">
             <div className="skillsTitleContainer">
-                <AnimationOnScroll animateIn="animate__slideInDown">
+                <AnimationOnScroll animateIn="animate__slideInDown" animateOnce={true}>
                     <h1 className="skillsTitle">{t("skills.title")}</h1>
                 </AnimationOnScroll>
             </div>

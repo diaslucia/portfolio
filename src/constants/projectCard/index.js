@@ -21,7 +21,7 @@ const ProjectCard = ({ title, tecnology, img, onClick }) => {
 
     return(
         <Link activeClass="active" to="projects" spy={true} smooth={true}>
-            <AnimationOnScroll animateIn="animate__fadeIn">
+            <AnimationOnScroll animateIn="animate__fadeIn" offset={50} animateOnce={true}>
                 <div className="cardContainer" onMouseOver={onHoverEnter} onMouseOut={onHoverOut} onClick={onClick}>
                     <div className="cardImgContainer" style={{ backgroundImage: `url(${img})` }}>
                         <div className="cardHoverContainer" style={{ display: cardHover }}>

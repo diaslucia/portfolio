@@ -21,7 +21,6 @@ const NavBar = ({ handleClick, t }) => {
         }   
     }
 
-
     const handleHamb = () => {
         setHamb(!hamb);
     }
@@ -30,12 +29,19 @@ const NavBar = ({ handleClick, t }) => {
 
     return(
         <nav className={navbar ? "nav activeNav" : "nav"}>
-            <div className={hamb ? "navBarInactive" : "navBar"}>
+            <div className="navBar">
                 <Link activeClass="active" className="link" to="home" spy={true} smooth={true} offset={0} duration={1000}>{t("navbar.home")}</Link>
                 <Link activeClass="active" className="link" to="about" spy={true} smooth={true} offset={0} duration={1000}>{t("navbar.about")}</Link>
                 <Link activeClass="active" className="link" to="skills" spy={true} smooth={true} offset={0} duration={1000}>{t("navbar.skills")}</Link>
                 <Link activeClass="active" className="link" to="projects" spy={true} smooth={true} offset={0} duration={1000}>{t("navbar.projects")}</Link>
                 <Link activeClass="active" className="link" to="contact" spy={true} smooth={true} offset={0} duration={1000}>{t("navbar.contact")}</Link>
+            </div>
+            <div className={hamb ? "navBarActive" : "navBarInactive"}>
+                <Link onClick={handleHamb} activeClass="active" className="link" to="home" spy={true} smooth={true} offset={0} duration={1000}>{t("navbar.home")}</Link>
+                <Link onClick={handleHamb} activeClass="active" className="link" to="about" spy={true} smooth={true} offset={0} duration={1000}>{t("navbar.about")}</Link>
+                <Link onClick={handleHamb} activeClass="active" className="link" to="skills" spy={true} smooth={true} offset={0} duration={1000}>{t("navbar.skills")}</Link>
+                <Link onClick={handleHamb} activeClass="active" className="link" to="projects" spy={true} smooth={true} offset={0} duration={1000}>{t("navbar.projects")}</Link>
+                <Link onClick={handleHamb} activeClass="active" className="link" to="contact" spy={true} smooth={true} offset={0} duration={1000}>{t("navbar.contact")}</Link>
             </div>
             <div className="navBarHamb" onClick={handleHamb}>
                 <FontAwesomeIcon className="icon" icon={faBars}/>

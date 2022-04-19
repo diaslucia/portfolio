@@ -73,7 +73,13 @@
     } 
     .navBarHamb{
         display:none;
-    }   
+    }
+    .navBarActive{
+        display:none; 
+    } 
+    .navBarInactive{
+        display:none; 
+    }
 }
 
 .activeNav{
@@ -87,7 +93,7 @@
 }
 
 /* Ipads */
-@media only screen and (min-width: 1000px) and (max-width: 1299px) {
+@media only screen and (min-width: 699px) and (max-width: 1299px) {
   
     .nav{
         height: 40px;
@@ -145,6 +151,30 @@
         .navBar{
             display:none;
         }
+        .navBarActive{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            width: 100%;
+            background-color: $main;
+            padding: $small 0px;
+            .link{
+                @include navFont($textIpad);
+                color: $secondaryText;
+                text-transform: uppercase;
+                margin: 7px $extraSmall;
+                text-decoration: none;
+                cursor:pointer;
+                &:hover {
+                    padding-bottom: 3px;
+                    border-bottom: 2px solid $secondaryText;
+                }
+            }
+        }
+        .navBarInactive{
+            display:none;
+        }
         .lang{
             padding-top: 12px;
             .langContainer{
@@ -184,28 +214,6 @@
                 }
             }
         }   
-    }
-   
-    .navBarInactive{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        width: 100%;
-        background-color: $main;
-        padding: $small 0px;
-        .link{
-            @include navFont($textIpad);
-            color: $secondaryText;
-            text-transform: uppercase;
-            margin: 7px $extraSmall;
-            text-decoration: none;
-            cursor:pointer;
-            &:hover {
-                padding-bottom: 3px;
-                border-bottom: 2px solid $secondaryText;
-            }
-        }
     }
     .activeNav{
         background-color: $red;

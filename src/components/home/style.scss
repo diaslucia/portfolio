@@ -64,10 +64,16 @@
         z-index: 4;
         top: 0;
     }
+    .wallpaper3{
+        display: none;
+    }
+    .wallpaper4{
+        display: none;
+    }
 }
 
 /* Ipads */
-@media only screen and (min-width: 1000px) and (max-width: 1299px) {
+@media only screen and (min-width: 699px) and (max-width: 1299px) {
 
     .homeContainer{
         .parallax{
@@ -91,6 +97,7 @@
 
     .homeContainer{
         .parallax{
+            background-image: url("../../assets/wall1phone.png");
             .whiteBorder{
                 background-color: none;
                 border: 4px solid $secondary;
@@ -119,6 +126,22 @@
         }
         .wallpaper2{
             display: none;
+        }
+        .wallpaper3{
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 4;
+            bottom: 0;
+        }
+        .wallpaper4{
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 4;
+            top: 0;
         }
     }
 

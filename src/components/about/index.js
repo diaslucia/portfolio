@@ -43,7 +43,7 @@ const About = () => {
                 <div className="aboutInfoContainer">
 
                     <div className="aboutTitleContainer">
-                        <AnimationOnScroll animateIn="animate__slideInDown">
+                        <AnimationOnScroll animateIn="animate__slideInDown" animateOnce={true}>
                             <h1 className="aboutTitle">{t("about.title")}</h1>
                         </AnimationOnScroll>
                     </div>
@@ -69,22 +69,22 @@ const About = () => {
             
 
             <div className="aboutLogosContainer">
-                <AnimationOnScroll animateIn="animate__zoomIn" delay={100}>
+                <AnimationOnScroll animateIn="animate__zoomIn" delay={50} animateOnce={true} offset={50}>
                     <img src={me1} alt="icono cat gato"/>
                 </AnimationOnScroll>
-                <AnimationOnScroll animateIn="animate__zoomIn" delay={200}>
+                <AnimationOnScroll animateIn="animate__zoomIn" delay={100} animateOnce={true} offset={50}>
                     <img src={me2} alt="icono vegan"/>
                 </AnimationOnScroll>
-                <AnimationOnScroll animateIn="animate__zoomIn" delay={300}>
+                <AnimationOnScroll animateIn="animate__zoomIn" delay={150} animateOnce={true} offset={50}>
                     <img src={me3} alt="icono rollerblades"/>
                 </AnimationOnScroll>
-                <AnimationOnScroll animateIn="animate__zoomIn" delay={400}>
+                <AnimationOnScroll animateIn="animate__zoomIn" delay={200} animateOnce={true} offset={50}>
                     <img src={me4} alt="icono pc"/>
                 </AnimationOnScroll>
-                <AnimationOnScroll animateIn="animate__zoomIn" delay={500}>
+                <AnimationOnScroll animateIn="animate__zoomIn" delay={250} animateOnce={true} offset={50}>
                     <img src={me5} alt="icono books libros"/>
                 </AnimationOnScroll>
-                <AnimationOnScroll animateIn="animate__zoomIn" delay={600}>
+                <AnimationOnScroll animateIn="animate__zoomIn" delay={300} animateOnce={true} offset={50}>
                     <img src={me6} alt="icono luggage maleta"/>
                 </AnimationOnScroll>
             </div>

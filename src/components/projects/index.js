@@ -22,8 +22,6 @@ const Projects = ({ lang }) => {
     const [pageItem,setPageItem] = useState([]);
     const [openPage, setOpenPage] = useState(false);
 
-    console.log(openPage)
-
     const renderProjectPage = (id) => {
         if(lang === false){
             let project = DETAILS.filter((page) => page.id === id);
@@ -45,7 +43,7 @@ const Projects = ({ lang }) => {
         <div className="projectsContainer" id="projects">
 
             <div className="projectsTitleContainer">
-                <AnimationOnScroll animateIn="animate__slideInDown">
+                <AnimationOnScroll animateIn="animate__slideInDown" animateOnce={true}>
                     <h1 className="projectsTitle">{t("projects.title")}</h1>
                 </AnimationOnScroll>
             </div>

@@ -22,7 +22,7 @@ const Contact = () => {
 
                 <div className="contactTitleContainer">
                     <h2 className="contactSubtitle">{t("contact.subtitle")}</h2>
-                    <AnimationOnScroll animateIn="animate__slideInDown">
+                    <AnimationOnScroll animateIn="animate__slideInDown" animateOnce={true}>
                         <h1 className="contactTitle">{t("contact.title")}</h1>
                     </AnimationOnScroll>
                 </div>
@@ -31,7 +31,7 @@ const Contact = () => {
                 <div className="contactWaysContainer">
                     <div className="contactEachContainer">
                         <div className="contactIconContainer">
-                            <AnimationOnScroll animateIn="animate__fadeInDown" delay={100}>
+                            <AnimationOnScroll animateIn="animate__fadeInDown" delay={100} animateOnce={true}>
                                 <a href="https://wa.me/+5491169679769" target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon" icon={faWhatsapp}/></a>
                             </AnimationOnScroll>
                         </div>
@@ -39,7 +39,7 @@ const Contact = () => {
                     </div>
                     <div className="contactEachContainer">
                         <div className="contactIconContainer">
-                            <AnimationOnScroll animateIn="animate__fadeInDown" delay={100}>
+                            <AnimationOnScroll animateIn="animate__fadeInDown" delay={100} animateOnce={true}>
                                 <a href="mailto:lucy_17_4@hotmail.com" target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon" icon={faEnvelope}/></a>
                             </AnimationOnScroll>
                         </div>
@@ -47,7 +47,7 @@ const Contact = () => {
                     </div>
                     <div className="contactEachContainer">
                         <div className="contactIconContainer">
-                            <AnimationOnScroll animateIn="animate__fadeInDown" delay={100}>
+                            <AnimationOnScroll animateIn="animate__fadeInDown" delay={100} animateOnce={true}>
                                 <a href="https://www.linkedin.com/in/lucia-dias/" target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon" icon={faLinkedinIn}/></a>
                             </AnimationOnScroll>
                         </div>
