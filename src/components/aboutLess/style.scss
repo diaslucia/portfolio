@@ -28,7 +28,7 @@
 }
 
 /* Ipads */
-@media only screen and (min-width: 699px) and (max-width: 1299px) {
+@media only screen and (min-width: 1000px) and (max-width: 1299px) {
 
     .aboutParContainerLess{
         max-width: 400px;
@@ -42,6 +42,24 @@
         }
     }
     
+}
+
+
+/* Small Ipad */
+@media only screen and (min-width: 699px) and (max-width: 999px) {
+
+    .aboutParContainerLess{
+        max-width: 350px;
+        margin: 0px;
+        .aboutInnerParContainer{
+            padding-bottom: $extraSmall;
+            text-align: justify;
+        }
+        .aboutText{
+            @include textFont($textIpad); 
+        }
+    }
+
 }
 
 /* Phones */

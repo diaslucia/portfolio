@@ -97,13 +97,60 @@
 }
 
 /* Ipads */
-@media only screen and (min-width: 699px) and (max-width: 1299px) {
+@media only screen and (min-width: 1000px) and (max-width: 1299px) {
 
     .contactContainer{
         .contactBorder{
             border: 2px solid $secondary;
             height: 70vh;
             width: 70vw;
+            .contactTitleContainer{
+                margin: $large;
+                .contactSubtitle{
+                    @include textFont($textIpad);
+                }
+                .contactTitle{
+                    @include titleFont($titleIpad);
+                }
+            }
+            .contactWaysContainer{
+                margin: $medium;
+                .contactEachContainer{
+                    margin: $medium;
+                    .contactIconContainer{
+                        width: 40px;
+                        height: 40px;
+                        &:hover{
+                            width: 35px;
+                            height: 35px;
+                            border: 2px solid $secondary;
+                            cursor: pointer;
+                        }
+                        .icon{
+                            font-size: 25px;
+                        }
+                    }
+                    p{
+                        @include textFont($textIpad);
+                    }
+                }
+            }
+    
+        }
+        
+    }
+
+}
+
+
+/* Small Ipad */
+@media only screen and (min-width: 699px) and (max-width: 999px) {
+
+    .contactContainer{
+        .contactBorder{
+            border: 2px solid $secondary;
+            height: 70vh;
+            width: 80vw;
             .contactTitleContainer{
                 margin: $large;
                 .contactSubtitle{

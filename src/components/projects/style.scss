@@ -54,7 +54,7 @@
 }
 
 /* Ipads */
-@media only screen and (min-width: 699px) and (max-width: 1299px) {
+@media only screen and (min-width: 1000px) and (max-width: 1299px) {
 
   .projectsContainer{
     height: auto;
@@ -70,6 +70,30 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-gap: $medium;
+        padding: $large 0px;
+    }
+  }
+
+}
+
+
+/* Small Ipad */
+@media only screen and (min-width: 699px) and (max-width: 999px) {
+
+  .projectsContainer{
+    height: auto;
+    min-height: 100vh;
+    padding: $large 0px;
+    .projectsTitleContainer{
+        .projectsTitle{
+            @include titleFont($titleIpad);
+            padding: $medium;
+        }
+    }
+    .projectsMainContainer{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: $small;
         padding: $large 0px;
     }
   }

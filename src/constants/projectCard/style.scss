@@ -82,6 +82,25 @@
 
 }
 
+/* Small Ipad */
+@media only screen and (min-width: 699px) and (max-width: 999px) {
+
+    .cardContainer {
+        width: 300px;
+        height: 200px;
+        .cardImgContainer{
+            .cardHoverContainer{
+                h2{
+                    width: 90%;
+                    @include titleFont($textIpad);
+                    margin: $extraSmall 0px;
+                }
+            }
+        }
+    }
+
+}
+
 /* Phones */
 @media only screen and (min-width: 200px) and (max-width: 600px) {
 

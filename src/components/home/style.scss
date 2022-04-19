@@ -73,7 +73,7 @@
 }
 
 /* Ipads */
-@media only screen and (min-width: 699px) and (max-width: 1299px) {
+@media only screen and (min-width: 1000px) and (max-width: 1299px) {
 
     .homeContainer{
         .parallax{
@@ -83,6 +83,29 @@
                 }
                 .homeSubtitleContainer{
                     height: 30px;
+                    width: 400px;
+                    @include textFont($textIpad);
+                }
+            }
+        }
+    }
+
+}
+
+
+/* Small Ipad */
+@media only screen and (min-width: 699px) and (max-width: 999px) {
+
+    .homeContainer{
+        .parallax{
+            .whiteBorder{
+                height: 70vh;
+                width: 70vw;
+                .homeTitle{
+                    @include titleFont(25px);
+                }
+                .homeSubtitleContainer{
+                    height: 23px;
                     width: 400px;
                     @include textFont($textIpad);
                 }

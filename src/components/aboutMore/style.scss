@@ -31,11 +31,28 @@
 
 
 /* Ipads */
-@media only screen and (min-width: 699px) and (max-width: 1299px) {
+@media only screen and (min-width: 1000px) and (max-width: 1299px) {
 
     .aboutParContainer{
         margin: 0px;
         max-width: 400px;
+        .aboutInnerParContainer{
+            padding-bottom: $extraSmall;
+        }
+        .aboutText{
+            @include textFont($textIpad);
+        }
+    }
+
+}
+
+
+/* Small Ipad */
+@media only screen and (min-width: 699px) and (max-width: 999px) {
+
+    .aboutParContainer{
+        margin: 0px;
+        max-width: 350px;
         .aboutInnerParContainer{
             padding-bottom: $extraSmall;
         }

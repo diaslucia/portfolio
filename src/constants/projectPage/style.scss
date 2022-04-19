@@ -167,6 +167,55 @@
 
 }
 
+
+/* Small Ipad */
+@media only screen and (min-width: 699px) and (max-width: 999px) {
+
+    .pageAllContainer{
+        width: 90vw;
+        max-height: 480px;
+        .pageContainer{
+            .pageInfoContainer{
+                margin: 0px 30px;
+                h1{
+                    @include titleFont($titleIpad);
+                    margin-top: $medium;
+                }
+                h2{
+                    @include textFont($textIpad);
+                    margin-bottom: $medium;
+                }
+                p{
+                    @include textFont($textIpad);
+                    margin-bottom: $medium;
+                    max-width: 100%;
+                }
+                .pageIconsContainer{
+                    padding-bottom: $medium;
+                    .pageIconContainer{
+                        width: 35px;
+                        height: 35px;
+                        &:hover{
+                            width: 25px;
+                            height: 25px;
+                        }
+                        .icon{
+                            font-size: 25px;
+                            margin: 0px;
+                        }
+                    }
+                }
+            }
+            .pageImgContainer{
+                img{
+                    width: 300px;
+                }
+            }
+        }
+    }
+
+}
+
 /* Phones */
 @media only screen and (min-width: 200px) and (max-width: 600px) {
     

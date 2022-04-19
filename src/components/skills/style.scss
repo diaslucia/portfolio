@@ -43,7 +43,7 @@
 }
 
 /* Ipads */
-@media only screen and (min-width: 699px) and (max-width: 1299px) {
+@media only screen and (min-width: 1000px) and (max-width: 1299px) {
     
     .skillsContainer{
         .skillsTitleContainer{
@@ -53,6 +53,34 @@
             }
         }
         .skillsImgContainer{
+            div{
+                img{
+                    width: 50px;
+                    margin: $small;
+                }
+                p{
+                    @include textFont($textIpad);
+                }
+            } 
+        }
+    }
+
+}
+
+
+/* Small Ipad */
+@media only screen and (min-width: 699px) and (max-width: 999px) {
+
+    .skillsContainer{
+        height: 65vh;
+        .skillsTitleContainer{
+            .skillsTitle{
+                @include titleFont($titleIpad);
+                padding: $medium;
+            }
+        }
+        .skillsImgContainer{
+            width: 80%;
             div{
                 img{
                     width: 50px;

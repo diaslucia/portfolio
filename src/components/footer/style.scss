@@ -23,7 +23,20 @@
 
 
 /* Ipads */
-@media only screen and (min-width: 699px) and (max-width: 1299px) {
+@media only screen and (min-width: 1000px) and (max-width: 1299px) {
+
+    .footerContainer{
+        height: 5vh;
+        p{
+            @include textFont(14px);
+        }
+    }
+
+}
+
+
+/* Small Ipad */
+@media only screen and (min-width: 699px) and (max-width: 999px) {
 
     .footerContainer{
         height: 5vh;

@@ -86,7 +86,7 @@
 }
 
 /* Ipads */
-@media only screen and (min-width: 699px) and (max-width: 1299px) {
+@media only screen and (min-width: 1000px) and (max-width: 1299px) {
 
     .aboutContainer{
         min-height: 100vh;
@@ -129,6 +129,49 @@
 
 }
 
+/* Small Ipad */
+@media only screen and (min-width: 699px) and (max-width: 999px) {
+
+    .aboutContainer{
+        min-height: 100vh;
+        height: auto;
+        padding: $large 0px;
+        
+        .aboutInnerContainer{
+
+            .aboutImgContainer{
+                img{
+                    height: 320px;
+                }
+            }
+
+            .aboutInfoContainer{
+                padding: 10px 0px;
+                .aboutTitleContainer{
+                    .aboutTitle{
+                        @include titleFont($titleIpad);
+                        margin: $medium;
+                    }
+                }
+                .aboutButtonContainer{
+                    margin: $medium;
+                }
+            }
+        }
+
+        .aboutLogosContainer{
+            margin: $xl;
+            padding: $extraSmall 0px;
+            img{
+                margin: 0px $large;
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+    }
+
+}
 
 /* Phones */
 @media only screen and (min-width: 200px) and (max-width: 600px) {
