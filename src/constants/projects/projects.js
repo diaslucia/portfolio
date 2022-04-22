@@ -1,9 +1,9 @@
-import img1 from "../../assets/p1.png"
-import img2 from "../../assets/p2.png"
-import img3 from "../../assets/p3.png"
-import img4 from "../../assets/p4.png"
-import img5 from "../../assets/p5.png"
-import img6 from "../../assets/p6.png"
+import img1 from "../../assets/p1.jpg"
+import img2 from "../../assets/p2.jpg"
+import img3 from "../../assets/p3.jpg"
+import img4 from "../../assets/p4.jpg"
+import img5 from "../../assets/p5.jpg"
+import img6 from "../../assets/p6.jpg"
 
 export const PROJECTS = [
     {
