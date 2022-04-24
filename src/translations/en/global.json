@@ -7,14 +7,15 @@
         "contact": "Contact"
     },
     "home": {
-        "title": "Hi! I'm Lucia Dias",
+        "title": "Hi!",
+        "title2": " I'm Lucia Dias",
         "subtitle": "Front-End Developer"
     },
     "about": {
         "title": "About",
         "text1": "My name is Lucia and I'm a",
         "bold1": " Front-End Developer ",
-        "text2": "graduated from Coderhouse, school where I'm still studying to perfect myself and learn about new tecnologies.",
+        "text2": "graduated from Coderhouse, school where I'm still studying to perfect myself and learning about new tecnologies.",
         "text3": "My",
         "bold2": " english level is advanced ",
         "text4": " since I've lived and worked in the United States for two years and a half.",

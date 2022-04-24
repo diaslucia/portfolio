@@ -7,7 +7,8 @@
         "contact": "Contacto"
     },
     "home": {
-        "title": "Hola! Soy Lucia Dias",
+        "title": "Hola!",
+        "title2": " Soy Lucia Dias",
         "subtitle": "Desarrolladora Front-End"
     },
     "about": {

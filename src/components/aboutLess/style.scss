@@ -2,28 +2,37 @@
 
 
 .aboutParContainerLess{
-    align-items: flex-start;
-    max-width: 600px;
-    margin: 0px 60px;
-    .aboutInnerParContainer{
-        padding-bottom: $small;
-        text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .aboutInContainer{
+        align-items: flex-start;
+        max-width: 600px;
+        margin: 0px 60px;
+        .aboutInnerParContainer{
+            padding-bottom: $small;
+            text-align: justify;
+        }
+        .aboutText{
+            display: inline;
+            @include textFont($text);
+            color: $primaryText;
+            text-align: justify;
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        .aboutBold{
+            @include textFont($text);
+            display: inline;
+            font-weight: bold;
+            margin: 0px;
+            padding: 0px;
+            text-align: justify;
+        }
     }
-    .aboutText{
-        display: inline;
-        @include textFont($text);
-        color: $primaryText;
-        text-align: justify;
-        margin: 0px;
-        padding: 0px;
-        
-    }
-    .aboutBold{
-        display: inline;
-        font-weight: bold;
-        margin: 0px;
-        padding: 0px;
-        text-align: justify;
+    .aboutButtonContainer{
+        margin: $medium;
     }
 }
 
@@ -31,14 +40,16 @@
 @media only screen and (min-width: 1000px) and (max-width: 1299px) {
 
     .aboutParContainerLess{
-        max-width: 400px;
-        margin: 0px;
-        .aboutInnerParContainer{
-            padding-bottom: $extraSmall;
-            text-align: justify;
-        }
-        .aboutText{
-            @include textFont($textIpad); 
+        .aboutInContainer{
+            max-width: 400px;
+            margin: 0px;
+            .aboutInnerParContainer{
+                padding-bottom: $extraSmall;
+                text-align: justify;
+            }
+            .aboutText{
+                @include textFont($textIpad); 
+            }
         }
     }
     
@@ -49,14 +60,16 @@
 @media only screen and (min-width: 699px) and (max-width: 999px) {
 
     .aboutParContainerLess{
-        max-width: 350px;
-        margin: 0px;
-        .aboutInnerParContainer{
-            padding-bottom: $extraSmall;
-            text-align: justify;
-        }
-        .aboutText{
-            @include textFont($textIpad); 
+        .aboutInContainer{
+            max-width: 350px;
+            margin: 0px;
+            .aboutInnerParContainer{
+                padding-bottom: $extraSmall;
+                text-align: justify;
+            }
+            .aboutText{
+                @include textFont($textIpad); 
+            }
         }
     }
 
@@ -66,13 +79,15 @@
 @media only screen and (min-width: 200px) and (max-width: 600px) {
 
     .aboutParContainerLess{
-        width: auto;
-        margin: 0px 30px;
-        .aboutInnerParContainer{
-            padding-bottom: $extraSmall;
-        }
-        .aboutText{
-            @include textFont($textIpad);
+        .aboutInContainer{
+            width: auto;
+            margin: 0px 30px;
+            .aboutInnerParContainer{
+                padding-bottom: $extraSmall;
+            }
+            .aboutText{
+                @include textFont($textIpad);
+            }
         }
     }
 

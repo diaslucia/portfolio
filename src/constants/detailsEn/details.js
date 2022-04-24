@@ -56,7 +56,7 @@ export const DETAILSEN = [
         tecnology: "React JS | SASS",
         description: "My personal portfolio was developed with React JS and it has some libraries for animation, icons and change of language.",
         github: "https://github.com/diaslucia/portfolio",
-        link: "https://natali.ruizdegalarreta.com.ar/",
+        link: "https://luciadias.com",
         img: page6
     }
 ]

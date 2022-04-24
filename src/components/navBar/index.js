@@ -8,6 +8,10 @@ import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
+/* Animations */
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import "animate.css/animate.min.css";
+
 
 const NavBar = ({ handleClick, t }) => {
     const [navbar,setNavbar] = useState(false);
@@ -36,7 +40,7 @@ const NavBar = ({ handleClick, t }) => {
                 <Link activeClass="active" className="link" to="projects" spy={true} smooth={true} offset={0} duration={1000}>{t("navbar.projects")}</Link>
                 <Link activeClass="active" className="link" to="contact" spy={true} smooth={true} offset={0} duration={1000}>{t("navbar.contact")}</Link>
             </div>
-            <div className={hamb ? "navBarActive" : "navBarInactive"}>
+            <div className={hamb ? "navBarActive " : "navBarInactive"}>
                 <Link onClick={handleHamb} activeClass="active" className="link" to="home" spy={true} smooth={true} offset={0} duration={1000}>{t("navbar.home")}</Link>
                 <Link onClick={handleHamb} activeClass="active" className="link" to="about" spy={true} smooth={true} offset={0} duration={1000}>{t("navbar.about")}</Link>
                 <Link onClick={handleHamb} activeClass="active" className="link" to="skills" spy={true} smooth={true} offset={0} duration={1000}>{t("navbar.skills")}</Link>

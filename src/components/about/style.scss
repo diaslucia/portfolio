@@ -1,7 +1,10 @@
 @import "../../sass/theme.scss";
 
 .aboutContainer{
-    background-color: $primaryBackground;
+    background-image: url("../../assets/aboutWall.jpg");
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
     min-height: 100vh;
     height: auto;
     width: 100%;
@@ -9,7 +12,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    padding: $xl 0px;
+    padding: 0px;
     
     .aboutInnerContainer{
         display: flex;
@@ -37,31 +40,10 @@
                     @include titleFont($title);
                     color: $primaryTitle;
                     text-align: center;
-                    margin: $large;
+                    margin-bottom: $large;
                     padding: 0px;
                 }
             }
-            .aboutButtonContainer{
-                margin: $large;
-            }
-        }
-    }
-
-    .aboutLogosContainer{
-        margin-bottom: auto;
-        width: 100%;
-        background-color: transparent;
-        display: flex;
-        flex-direction: row;
-        justify-content:center;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: $xl;
-        padding: $extraSmall 0px;
-        img{
-            margin: 0px $large;
-            width: 50px;
-            height: 50px;
         }
     }
     
@@ -91,7 +73,6 @@
     .aboutContainer{
         min-height: 100vh;
         height: auto;
-        padding: $xl 0px;
         
         .aboutInnerContainer{
 
@@ -106,22 +87,9 @@
                 .aboutTitleContainer{
                     .aboutTitle{
                         @include titleFont($titleIpad);
-                        margin: $medium;
+                        margin-bottom: $medium;
                     }
                 }
-                .aboutButtonContainer{
-                    margin: $medium;
-                }
-            }
-        }
-
-        .aboutLogosContainer{
-            margin: $xl;
-            padding: $extraSmall 0px;
-            img{
-                margin: 0px $large;
-                width: 45px;
-                height: 45px;
             }
         }
 
@@ -150,25 +118,11 @@
                 .aboutTitleContainer{
                     .aboutTitle{
                         @include titleFont($titleIpad);
-                        margin: $medium;
+                        margin-bottom: $medium;
                     }
                 }
-                .aboutButtonContainer{
-                    margin: $medium;
-                }
             }
         }
-
-        .aboutLogosContainer{
-            margin: $xl;
-            padding: $extraSmall 0px;
-            img{
-                margin: 0px $large;
-                width: 45px;
-                height: 45px;
-            }
-        }
-
     }
 
 }
@@ -177,11 +131,16 @@
 @media only screen and (min-width: 200px) and (max-width: 600px) {
 
     .aboutContainer{
+        background-image: url("../../assets/aboutWallPhone.jpg");
+        background-size: contain;
+        background-repeat: repeat;
+        background-position: center;
+
         min-height: 100vh;
         height: auto;
         width: auto;
         
-        padding-bottom: 0px;
+        padding-bottom: $xl;
         padding-top: $large;
         
         .aboutInnerContainer{
@@ -196,21 +155,10 @@
                 .aboutTitleContainer{
                     .aboutTitle{
                         @include titleFont($titleIpad);
-                        margin: $extraSmall 0px;
+                        margin-bottom: $extraSmall;
                         padding: $medium;
                     }
                 }
-                .aboutButtonContainer{
-                    margin: $medium;
-                }
-            }
-        }
-        .aboutLogosContainer{
-            margin: $xl;
-            img{
-                margin:$small;
-                width: 40px;
-                height: 40px;
             }
         }
         

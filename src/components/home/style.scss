@@ -23,12 +23,24 @@
             -webkit-box-shadow: 5px 5px 8px -1px rgba(0,0,0,0.31);
             -moz-box-shadow: 5px 5px 8px -1px rgba(0,0,0,0.31);
             box-shadow: 5px 5px 8px -1px rgba(0,0,0,0.31);
-    
-            .homeTitle{
-                @include titleFont(40px);
-                color: $secondaryTitle;
-                text-align: center;
-                margin: $small;
+
+            .homeTitles{
+                display: inline-block;
+                .homeAnimation{
+                    display: inline-block;
+                    .homeTitle{
+                        @include titleFont(40px);
+                        color: $secondaryTitle;
+                        text-align: center;
+                        margin-bottom: $small;
+                        margin-right: $small;
+                    }
+                    .homeTitle2{
+                        @include titleFont(40px);
+                        color: $secondaryTitle;
+                        text-align: center;
+                    }
+                }
             }
             
             .homeSubtitleContainer{
@@ -101,8 +113,15 @@
             .whiteBorder{
                 height: 70vh;
                 width: 70vw;
-                .homeTitle{
-                    @include titleFont(25px);
+                .homeTitles{
+                    .homeAnimation{
+                        .homeTitle{
+                            @include titleFont(25px);
+                        }
+                        .homeTitle2{
+                            @include titleFont(25px);
+                        }
+                    }
                 }
                 .homeSubtitleContainer{
                     height: 23px;
@@ -126,13 +145,24 @@
                 border: 4px solid $secondary;
                 height: 70vh;
                 width: 80vw;
-                .homeTitle{
-                    align-self: flex-start;
-                    @include titleFont(30px);
-                    width: $small;
-                    margin: $large;
-                    text-align: left;
+                .homeTitles{
+                    .homeAnimation{
+                        align-self: flex-start;
+                        .homeTitle{
+                            @include titleFont(30px);
+                            width: 100%;
+                            margin: $small $small 0px $small;
+                            text-align: left;
+                        }
+                        .homeTitle2{
+                            @include titleFont(30px);
+                            width: 100%;
+                            margin: 0px $small $small $small;
+                            text-align: left;
+                        }
+                    }
                 }
+
                 .homeSubtitleContainer{
                     height: 60px;
                     width: 100%;

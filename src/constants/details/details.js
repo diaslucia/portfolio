@@ -56,7 +56,7 @@ export const DETAILS = [
         tecnology: "React JS | SASS",
         description: "Mi portfolio personal fue desarrollado con React JS y cuenta con algunas librerías de animación, idioma e íconos.",
         github: "https://github.com/diaslucia/portfolio",
-        link: "https://natali.ruizdegalarreta.com.ar/",
+        link: "https://luciadias.com",
         img: page6
     }
 ]
