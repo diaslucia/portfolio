@@ -21,7 +21,7 @@ export const DETAILS = [
         tecnology: "Javascript | Firebase | SASS",
         description: "Este sitio fue mi proyecto final para el curso de Javascript. Es una tienda virtual de moda, donde se puede comprar vestidos y accesorios. Cuenta con las opciones de filtrar los productos por categorías o precio, agregar al carrito y realizar la compra.",
         github: "https://github.com/diaslucia/cirse",
-        link: "https://diaslucia.github.io/cirse/",
+        link: "https://cirse.netlify.app/",
         img: page2
     },
     {

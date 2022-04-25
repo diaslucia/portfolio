@@ -21,7 +21,7 @@ export const DETAILSEN = [
         tecnology: "Javascript | Firebase | SASS",
         description: "This website was my final assignment for my Javascript course. Cirse is a fashion e-commerce, where you can buy dresses and accessories. You have the option to filter products by category, sort them by price and add them to the cart.",
         github: "https://github.com/diaslucia/cirse",
-        link: "https://diaslucia.github.io/cirse/",
+        link: "https://cirse.netlify.app/",
         img: page2
     },
     {
@@ -39,7 +39,7 @@ export const DETAILSEN = [
         tecnology: "HTML | CSS",
         description: "This website was my final assignment for my Web Development course. Lilhué is a small business, that offers hand-painted mates. The site has seven sections, a form for consults and orders, and a Whatsapp button.",
         github: "https://github.com/diaslucia/lilhue",
-        link: "https://diaslucia.github.io/lilhue/",
+        link: "https://lilhue.netlify.app/",
         img: page4
     },
     {

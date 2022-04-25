@@ -1,16 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import "./style.scss";
 
 /* Icons */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faPaperclip, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faXmark, faDisplay } from "@fortawesome/free-solid-svg-icons";
 
 /* Animations */
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import "animate.css/animate.min.css";
 
 const ProjectPage = ({ title, tecnology, description, github, link, onClick, img }) => {
+    const [myLink, setMyLink] = useState(github);
 
     return(
         <AnimationOnScroll animateIn="animate__fadeIn" duration={2} offset={50} animateOnce={true}>
@@ -27,11 +28,14 @@ const ProjectPage = ({ title, tecnology, description, github, link, onClick, img
 
                         <div className="pageIconsContainer">
                             <div className="pageIconContainer">
+                                <a href={link} target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon" icon={faDisplay}/></a>
+                            </div>
+                            {myLink ? <div className="pageIconContainer">
                                 <a href={github} target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon" icon={faGithub}/></a>
                             </div>
-                            <div className="pageIconContainer">
-                                <a href={link} target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon" icon={faPaperclip}/></a>
-                            </div>
+                            :
+                            <></>
+                            }
                         </div>
                         
                     </div>

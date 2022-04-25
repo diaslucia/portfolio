@@ -68,13 +68,11 @@
                     box-shadow: 5px 5px 8px -1px rgba(0,0,0,0.31);
                     cursor: pointer;
                     &:hover{
-                        width: 35px;
-                        height: 35px;
                         border: 2px solid $secondary;
                         cursor: pointer;
                     }
                     .icon{
-                        font-size: 30px;
+                        font-size: 25px;
                         margin: 0px;
                         color: $main;
                         transition: all 0.5s;
