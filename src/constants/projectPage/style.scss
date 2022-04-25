@@ -12,6 +12,7 @@
     flex-direction: column;
     justify-items: center;
     align-items: flex-start;
+    margin-bottom: $large;
     .exit{
         font-size:$title;
         color: $primaryTitle;
@@ -91,7 +92,7 @@
         }
         .pageImgContainer{
             img{
-                width: 500px;
+                width: 450px;
             }
         }
     }
@@ -102,6 +103,7 @@
     .pageAllContainer{
         width: 70vw;
         max-height: 500px;
+        margin-bottom: $xl;
         .pageContainer{
             .pageInfoContainer{
                 margin: 0px 30px;
