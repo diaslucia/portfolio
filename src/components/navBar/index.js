@@ -1,5 +1,5 @@
 import React,{ useState } from "react";
-import style from "./style.scss";
+import "./style.scss";
 
 /* Scroll */
 import { Link } from "react-scroll";
@@ -7,11 +7,6 @@ import { Link } from "react-scroll";
 /* Icons */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-
-/* Animations */
-import { AnimationOnScroll } from 'react-animation-on-scroll';
-import "animate.css/animate.min.css";
-
 
 const NavBar = ({ handleClick, t }) => {
     const [navbar,setNavbar] = useState(false);

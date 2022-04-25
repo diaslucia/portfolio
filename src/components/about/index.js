@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "./style.scss";
+import "./style.scss";
 
 /* Img */
 import me from "../../assets/me.JPG";
@@ -31,7 +31,7 @@ const About = () => {
             <div className="aboutInnerContainer">
                 <div className="aboutImgContainer">
                     <Border>
-                        <img src={me} alt="Picture of me"/>
+                        <img src={me} alt="me"/>
                     </Border>
                 </div>
 

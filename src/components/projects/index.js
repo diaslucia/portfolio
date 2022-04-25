@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "./style.scss";
+import "./style.scss";
 
 /* Components */
 import ProjectCard from "../../constants/projectCard/index";

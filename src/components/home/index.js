@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./style.scss";
+import "./style.scss";
 
 /* Img */
 import wallpaper from "../../assets/wall2.png";
@@ -38,7 +38,7 @@ const Home = () => {
 
     return(
         <div className="homeContainer" id="home">
-            <div className="parallax">
+            <div className="parallax" style={{height: window.innerHeight}}>
                 <div className="whiteBorder">
                   <div className="homeTitles">
                     <AnimationOnScroll className="homeAnimation" animateIn="animate__fadeInRight" animateOnce={true}>
@@ -53,10 +53,10 @@ const Home = () => {
                   </div>
                 </div>
             </div>
-            <img className="wallpaper" src={wallpaper} alt="wallpaper"/>
-            <img className="wallpaper2" src={wallpaper2} alt="wallpaper"/>
-            <img className="wallpaper3" src={wallpaper3} alt="wallpaper"/>
-            <img className="wallpaper4" src={wallpaper4} alt="wallpaper"/>
+            <img className="wallpaper" src={wallpaper} alt="wallpaper" style={{height: window.innerHeight}}/>
+            <img className="wallpaper2" src={wallpaper2} alt="wallpaper" style={{height: window.innerHeight}}/>
+            <img className="wallpaper3" src={wallpaper3} alt="wallpaper" style={{height: window.innerHeight}}/>
+            <img className="wallpaper4" src={wallpaper4} alt="wallpaper" style={{height: window.innerHeight}}/>
         </div>
     );
 }

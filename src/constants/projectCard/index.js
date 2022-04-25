@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "./style.scss";
+import "./style.scss";
 
 /* Animations */
 import { AnimationOnScroll } from 'react-animation-on-scroll';
