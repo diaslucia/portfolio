@@ -1,10 +1,4 @@
-# Portfolio
-
-Hi! This is my Portfolio
- 
-## Project status 🚧
-
-On progress...
+# Hi! This is my Portfolio 💃
 
 ## Tecnologies 🛠️
 
@@ -12,9 +6,7 @@ List of tecnologies used for this project:
 
 - [Node JS](https://nodejs.org/es/)
 
-- [React](https://es.reactjs.org/)
-
-- [Javascript](https://www.javascript.com/)
+- [React JS](https://es.reactjs.org/)
 
 - [SASS](https://sass-lang.com/)
 
