@@ -39,7 +39,7 @@ export const DETAILS = [
         tecnology: "HTML | CSS",
         description: "Este sitio fue mi proyecto final para el curso de Desarrollo Web. Es un emprendimiento de dos hermanas que venden mates pintados a mano. Cuenta con siete secciones, un formulario de contacto para enviar consultas y pedidos, y un botón para comunicarse directamente por Whatsapp Web.",
         github: "https://github.com/diaslucia/lilhue",
-        link: "https://diaslucia.github.io/lilhue/",
+        link: "https://lilhue.netlify.app/",
         img: page4
     },
     {

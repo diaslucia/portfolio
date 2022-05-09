@@ -17,27 +17,41 @@ import { DETAILSEN } from "../../constants/detailsEn/details";
 /* Translations */
 import { useTranslation } from "react-i18next"
 
+/* GA4 */
+import ReactGA from "react-ga4";
+
 const Projects = ({ lang }) => {
     const [t] = useTranslation("global");
     const [pageItem,setPageItem] = useState([]);
     const [openPage, setOpenPage] = useState(false);
 
+    const GAEvent = (category, action) => {
+        ReactGA.event({
+            category: category,
+            action: action,
+        })
+    }
+
     const renderProjectPage = (id) => {
         if(lang === false){
             let project = DETAILS.filter((page) => page.id === id);
+            let nameProject = project[0].title;
             setPageItem(project);
             setOpenPage(true);
+            GAEvent("Click", `Click ${nameProject}`)
         }else{
             let project = DETAILSEN.filter((page) => page.id === id);
+            let nameProject = project[0].title;
             setPageItem(project);
             setOpenPage(true);
+            console.log(project.title)
+            GAEvent("Click", `Click ${nameProject}`)
         }
     }
 
     const closePage = () => {
         setOpenPage(false);
     }
-    
 
     return(
         <div className="projectsContainer" id="projects">

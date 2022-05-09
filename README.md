@@ -70,6 +70,14 @@ $npm install --save animate.css
 $npm i i18next
 $npm i react-i18next
 ```
+### Google Analytics 4
+
+1. Google Analytics GA4
+```
+$npm i react-ga4
+```
+
+
 
 
 

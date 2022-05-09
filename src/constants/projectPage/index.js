@@ -10,8 +10,18 @@ import { faXmark, faDisplay } from "@fortawesome/free-solid-svg-icons";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import "animate.css/animate.min.css";
 
+/* GA4 */
+import ReactGA from "react-ga4";
+
 const ProjectPage = ({ title, tecnology, description, github, link, onClick, img }) => {
     const [myLink, setMyLink] = useState(github);
+
+    const GAEvent = (category, action) => {
+        ReactGA.event({
+            category: category,
+            action: action,
+        })
+    }
 
     return(
         <AnimationOnScroll animateIn="animate__fadeIn" duration={2} offset={50} animateOnce={true}>
@@ -28,10 +38,10 @@ const ProjectPage = ({ title, tecnology, description, github, link, onClick, img
 
                         <div className="pageIconsContainer">
                             <div className="pageIconContainer">
-                                <a href={link} target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon" icon={faDisplay}/></a>
+                                <a href={link} onClick={() => GAEvent("Link", `Link ${title} Page`)} target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon" icon={faDisplay}/></a>
                             </div>
                             {myLink ? <div className="pageIconContainer">
-                                <a href={github} target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon" icon={faGithub}/></a>
+                                <a href={github} onClick={() => GAEvent("Link", `Link ${title} Repo`)} target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon" icon={faGithub}/></a>
                             </div>
                             :
                             <></>

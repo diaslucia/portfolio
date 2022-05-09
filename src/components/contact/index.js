@@ -13,8 +13,18 @@ import "animate.css/animate.min.css";
 /* Translations */
 import { useTranslation } from "react-i18next"
 
+/* GA4 */
+import ReactGA from "react-ga4";
+
 const Contact = () => {
     const [t] = useTranslation("global");
+
+    const GAEvent = (category, action) => {
+        ReactGA.event({
+            category: category,
+            action: action,
+        })
+    }
 
     return(
         <div className="contactContainer" id="contact">
@@ -32,7 +42,7 @@ const Contact = () => {
                     <div className="contactEachContainer">
                         <div className="contactIconContainer">
                             <AnimationOnScroll animateIn="animate__fadeInDown" delay={100} animateOnce={true}>
-                                <a href="https://wa.me/+5491169679769" target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon" icon={faWhatsapp}/></a>
+                                <a onClick={() => GAEvent("Click", "Click Whatsapp")} href="https://wa.me/+5491169679769" target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon" icon={faWhatsapp}/></a>
                             </AnimationOnScroll>
                         </div>
                         <p>{t("contact.whatsapp")}</p>
@@ -40,7 +50,7 @@ const Contact = () => {
                     <div className="contactEachContainer">
                         <div className="contactIconContainer">
                             <AnimationOnScroll animateIn="animate__fadeInDown" delay={100} animateOnce={true}>
-                                <a href="mailto:lucy_17_4@hotmail.com" target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon" icon={faEnvelope}/></a>
+                                <a onClick={() => GAEvent("Click", "Click Email Me")}  href="mailto:lucy_17_4@hotmail.com" target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon" icon={faEnvelope}/></a>
                             </AnimationOnScroll>
                         </div>
                         <p>{t("contact.email")}</p>
@@ -48,7 +58,7 @@ const Contact = () => {
                     <div className="contactEachContainer">
                         <div className="contactIconContainer">
                             <AnimationOnScroll animateIn="animate__fadeInDown" delay={100} animateOnce={true}>
-                                <a href="https://www.linkedin.com/in/lucia-dias/" target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon" icon={faLinkedinIn}/></a>
+                                <a onClick={() => GAEvent("Click", "Click LinkedIn")} href="https://www.linkedin.com/in/lucia-dias/" target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon" icon={faLinkedinIn}/></a>
                             </AnimationOnScroll>
                         </div>
                         <p>{t("contact.linkedin")}</p>

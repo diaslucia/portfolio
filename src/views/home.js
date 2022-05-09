@@ -12,13 +12,25 @@ import Footer from "../components/footer/index";
 /* Translations */
 import { useTranslation } from "react-i18next"
 
+/* GA4 */
+import ReactGA from "react-ga4";
+
 const HomeView = () => {
     const [lang, setLang] = useState(false);
     const [t, i18n] = useTranslation("global");
 
+    const GAEvent = (category, action) => {
+        ReactGA.event({
+            category: category,
+            action: action,
+        })
+        console.log(category, action);
+    }
+
     const handleClick = (e) => {
         e.preventDefault();
         setLang(!lang);
+        GAEvent("Click", "Click Lang");
         if(lang === true) {
             i18n.changeLanguage("es")
             document.querySelector(".langSpan").classList.remove("langSpanActive");

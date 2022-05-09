@@ -17,12 +17,23 @@ import AboutLess from "../aboutLess/index";
 /* Translations */
 import { useTranslation } from "react-i18next"
 
+/* GA4 */
+import ReactGA from "react-ga4";
+
 const About = () => {
     const [showMore, setShowMore] = useState(false);
     const [t] = useTranslation("global");
 
     const seeMore = () => {
         setShowMore(true);
+        GAEvent("Click", "Read More About");
+    }
+
+    const GAEvent = (category, action) => {
+        ReactGA.event({
+            category: category,
+            action: action,
+        })
     }
 
     return(
