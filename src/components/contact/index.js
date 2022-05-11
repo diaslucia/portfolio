@@ -50,7 +50,7 @@ const Contact = () => {
                     <div className="contactEachContainer">
                         <div className="contactIconContainer">
                             <AnimationOnScroll animateIn="animate__fadeInDown" delay={100} animateOnce={true}>
-                                <a onClick={() => GAEvent("Click", "Click Email Me")}  href="mailto:lucy_17_4@hotmail.com" target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon" icon={faEnvelope}/></a>
+                                <a onClick={() => GAEvent("Click", "Click Email Me")}  href="mailto:info@luciadias.com" target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon" icon={faEnvelope}/></a>
                             </AnimationOnScroll>
                         </div>
                         <p>{t("contact.email")}</p>
