@@ -2,7 +2,7 @@
 
 ## Website Deploy 🏁
 
-[www.luciadias.com](https://nodejs.org/es/](https://luciadias.com/)
+[www.luciadias.com](https://luciadias.com/)
 
 ## Tecnologies 🛠️
 
