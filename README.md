@@ -39,7 +39,7 @@ $npm install
 $npm start
 ```
 
-## Libraries
+## Libraries 📚
 
 ### SASS
 
