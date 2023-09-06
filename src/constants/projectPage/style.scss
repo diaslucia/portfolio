@@ -1,10 +1,21 @@
 @import "../../sass/theme.scss";
 
-.pageAllContainer{
+.backgroundPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.31);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .pageAllContainer {
     background-color: $thirdBackground;
-    -webkit-box-shadow: -5px 5px 8px -1px rgba(0,0,0,0.31);
-    -moz-box-shadow: -5px 5px 8px -1px rgba(0,0,0,0.31);
-    box-shadow: -5px 5px 8px -1px rgba(0,0,0,0.31);
+    -webkit-box-shadow: -5px 5px 8px -1px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: -5px 5px 8px -1px rgba(0, 0, 0, 0.31);
+    box-shadow: -5px 5px 8px -1px rgba(0, 0, 0, 0.31);
     width: 70vw;
     max-height: 500px;
     border-radius: 10px;
@@ -12,263 +23,267 @@
     flex-direction: column;
     justify-items: center;
     align-items: flex-start;
-    margin-bottom: $large;
-    .exit{
-        font-size:$title;
-        color: $primaryTitle;
-        margin: $small 0px 0px $small;
-        cursor: pointer;
-        transition: all 600ms;
-        &:hover {
-            transform: scale(1.1) Rotate(90deg);
-        }
+    z-index: 99;
+    .exit {
+      font-size: $title;
+      color: $primaryTitle;
+      margin: $small 0px 0px $small;
+      cursor: pointer;
+      transition: all 600ms;
+      &:hover {
+        transform: scale(1.1) Rotate(90deg);
+      }
     }
-    .pageContainer{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        .pageInfoContainer{
-            margin: 0px 30px;
-            h1{
-                @include titleFont($title);
-                color: $primaryTitle;
-                margin-top: 50px;
-            }
-            h2{
-                @include textFont($text);
-                color: $primaryText;
-                margin-bottom: $large;
-            }
-            p{
-                @include textFont($text);
-                color: $primaryText;
-                max-width: 80%;
-                margin-bottom: $large;
-                text-align: justify;
-            }
-            .pageIconsContainer{
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
-                align-items: center;
-                .pageIconContainer{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 50%;
-                    border: 2px solid $main;
-                    text-align: center;
-                    transition: all 0.5s;
-                    margin-right: $large;
-                    -webkit-box-shadow: 5px 5px 8px -1px rgba(0,0,0,0.31);
-                    -moz-box-shadow: 5px 5px 8px -1px rgba(0,0,0,0.31);
-                    box-shadow: 5px 5px 8px -1px rgba(0,0,0,0.31);
-                    cursor: pointer;
-                    &:hover{
-                        border: 2px solid $secondary;
-                        cursor: pointer;
-                    }
-                    .icon{
-                        font-size: 25px;
-                        margin: 0px;
-                        color: $main;
-                        transition: all 0.5s;
-                        svg{
-                            margin: 0px;
-                        }
-                        &:hover{
-                            transform: scale(1.3);
-                            color: $third;
-                            cursor: pointer;
-                        }
-                    }
-                }
-            }
+    .pageContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .pageInfoContainer {
+        margin: 0px 30px;
+        h1 {
+          @include titleFont($title);
+          color: $primaryTitle;
+          margin-top: 50px;
         }
-        .pageImgContainer{
-            img{
-                width: 450px;
-            }
+        h2 {
+          @include textFont($text);
+          color: $primaryText;
+          margin-bottom: $large;
         }
+        p {
+          @include textFont($text);
+          color: $primaryText;
+          max-width: 80%;
+          margin-bottom: $large;
+          text-align: justify;
+        }
+        .pageIconsContainer {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          .pageIconContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid $main;
+            text-align: center;
+            transition: all 0.5s;
+            margin-right: $large;
+            -webkit-box-shadow: 5px 5px 8px -1px rgba(0, 0, 0, 0.31);
+            -moz-box-shadow: 5px 5px 8px -1px rgba(0, 0, 0, 0.31);
+            box-shadow: 5px 5px 8px -1px rgba(0, 0, 0, 0.31);
+            cursor: pointer;
+            &:hover {
+              border: 2px solid $secondary;
+              cursor: pointer;
+            }
+            .icon {
+              font-size: 25px;
+              margin: 0px;
+              color: $main;
+              transition: all 0.5s;
+              svg {
+                margin: 0px;
+              }
+              &:hover {
+                transform: scale(1.3);
+                color: $third;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+      .pageImgContainer {
+        img {
+          width: 450px;
+        }
+      }
     }
+  }
 }
 
 /* Notebooks */
 @media only screen and (min-width: 1300px) and (max-width: 1600px) {
-    .pageAllContainer{
-        width: 70vw;
-        max-height: 500px;
-        margin-bottom: $xl;
-        .pageContainer{
-            .pageInfoContainer{
-                margin: 0px 30px;
-                p{
-                    max-width: 100%;
-                }
-            }
-            .pageImgContainer{
-                img{
-                    width: 500px;
-                }
-            }
+  .backgroundPopup {
+    .pageAllContainer {
+      width: 70vw;
+      max-height: 550px;
+      margin-bottom: $xl;
+      .pageContainer {
+        .pageInfoContainer {
+          margin: 0px 30px;
+          p {
+            max-width: 100%;
+          }
         }
+        .pageImgContainer {
+          img {
+            width: 500px;
+          }
+        }
+      }
     }
-
+  }
 }
-
 
 /* Ipads */
 @media only screen and (min-width: 1000px) and (max-width: 1299px) {
-
-    .pageAllContainer{
-        width: 80vw;
-        max-height: 450px;
-        .pageContainer{
-            .pageInfoContainer{
-                margin: 0px 30px;
-                h1{
-                    @include titleFont($titleIpad);
-                    margin-top: $medium;
-                }
-                h2{
-                    @include textFont($textIpad);
-                    margin-bottom: $medium;
-                }
-                p{
-                    @include textFont($textIpad);
-                    margin-bottom: $medium;
-                    max-width: 100%;
-                }
-                .pageIconsContainer{
-                    .pageIconContainer{
-                        width: 35px;
-                        height: 35px;
-                        &:hover{
-                            width: 25px;
-                            height: 25px;
-                        }
-                        .icon{
-                            font-size: 25px;
-                            margin: 0px;
-                        }
-                    }
-                }
+  .backgroundPopup {
+    .pageAllContainer {
+      width: 80vw;
+      max-height: 550px;
+      .pageContainer {
+        .pageInfoContainer {
+          margin: 0px 30px;
+          h1 {
+            @include titleFont($titleIpad);
+            margin-top: $medium;
+          }
+          h2 {
+            @include textFont($textIpad);
+            margin-bottom: $medium;
+          }
+          p {
+            @include textFont($textIpad);
+            margin-bottom: $medium;
+            max-width: 100%;
+          }
+          .pageIconsContainer {
+            .pageIconContainer {
+              width: 35px;
+              height: 35px;
+              &:hover {
+                width: 25px;
+                height: 25px;
+              }
+              .icon {
+                font-size: 25px;
+                margin: 0px;
+              }
             }
-            .pageImgContainer{
-                img{
-                    width: 400px;
-                }
-            }
+          }
         }
+        .pageImgContainer {
+          img {
+            width: 400px;
+          }
+        }
+      }
     }
-
+  }
 }
-
 
 /* Small Ipad */
 @media only screen and (min-width: 699px) and (max-width: 999px) {
-
-    .pageAllContainer{
-        width: 90vw;
-        max-height: 480px;
-        .pageContainer{
-            .pageInfoContainer{
-                margin: 0px 30px;
-                h1{
-                    @include titleFont($titleIpad);
-                    margin-top: $medium;
-                }
-                h2{
-                    @include textFont($textIpad);
-                    margin-bottom: $medium;
-                }
-                p{
-                    @include textFont($textIpad);
-                    margin-bottom: $medium;
-                    max-width: 100%;
-                }
-                .pageIconsContainer{
-                    padding-bottom: $medium;
-                    .pageIconContainer{
-                        width: 35px;
-                        height: 35px;
-                        &:hover{
-                            width: 25px;
-                            height: 25px;
-                        }
-                        .icon{
-                            font-size: 25px;
-                            margin: 0px;
-                        }
-                    }
-                }
+  .backgroundPopup {
+    .pageAllContainer {
+      width: 90vw;
+      max-height: 580px;
+      .pageContainer {
+        .pageInfoContainer {
+          margin: 0px 30px;
+          h1 {
+            @include titleFont($titleIpad);
+            margin-top: $medium;
+          }
+          h2 {
+            @include textFont($textIpad);
+            margin-bottom: $medium;
+          }
+          p {
+            @include textFont($textIpad);
+            margin-bottom: $medium;
+            max-width: 100%;
+          }
+          .pageIconsContainer {
+            padding-bottom: $medium;
+            .pageIconContainer {
+              width: 35px;
+              height: 35px;
+              &:hover {
+                width: 25px;
+                height: 25px;
+              }
+              .icon {
+                font-size: 25px;
+                margin: 0px;
+              }
             }
-            .pageImgContainer{
-                img{
-                    width: 300px;
-                }
-            }
+          }
         }
+        .pageImgContainer {
+          img {
+            width: 300px;
+          }
+        }
+      }
     }
-
+  }
 }
 
 /* Phones */
 @media only screen and (min-width: 200px) and (max-width: 600px) {
-    
-    .pageAllContainer{
-        width: 300px;
-        max-height: 800px;
-        margin-bottom: $large;
-        .pageContainer{
-            flex-direction: column;
-            .pageInfoContainer{
-                margin: 0px 20px;
-                h1{
-                    @include titleFont($titleIpad);
-                    margin-top: $small;
-                }
-                h2{
-                    @include textFont($textIpad);
-                    margin-bottom: $small;
-                }
-                p{
-                    @include textFont($textIpad);
-                    max-width: 100%;
-                    margin-bottom: $small;
-                }
-                .pageIconsContainer{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: flex-start;
-                    align-items: center;
-                    .pageIconContainer{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        width: 35px;
-                        height: 35px;
-                        &:hover{
-                            width: 25px;
-                            height: 25px;
-                        }
-                        .icon{
-                            font-size: 25px;
-                        }
-                    }
-                }
+  .backgroundPopup {
+    .pageAllContainer {
+      width: 90vw;
+      max-height: 80vh;
+      margin-bottom: $large;
+      z-index: 99;
+      overflow: scroll;
+      .pageContainer {
+        flex-direction: column;
+        .pageInfoContainer {
+          margin: 0px 20px;
+          h1 {
+            @include titleFont($titleIpad);
+            margin-top: $small;
+          }
+          h2 {
+            @include textFont($textIpad);
+            margin-bottom: $small;
+          }
+          p {
+            @include textFont(14px);
+            max-width: 100%;
+            margin-bottom: $small;
+          }
+          .pageIconsContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            .pageIconContainer {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: 35px;
+              height: 35px;
+              &:hover {
+                width: 25px;
+                height: 25px;
+              }
+              .icon {
+                font-size: 25px;
+              }
             }
-            .pageImgContainer{
-                align-self: flex-end;
-                img{
-                    width: 300px;
-                    margin: $medium 0px;
-                }
-            }
+          }
         }
+        .pageImgContainer {
+          align-self: flex-end;
+          img {
+            width: 300px;
+            margin: $medium 0px;
+          }
+        }
+      }
     }
+  }
 }

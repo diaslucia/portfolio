@@ -1,122 +1,114 @@
 @import "../../sass/theme.scss";
 
 .cardContainer {
-    width: 400px;
-    height: 250px;
-    border-radius: 10px;
-    overflow: hidden;
-    -webkit-box-shadow: -5px 5px 8px -1px rgba(0,0,0,0.31);
-    -moz-box-shadow: -5px 5px 8px -1px rgba(0,0,0,0.31);
-    box-shadow: -5px 5px 8px -1px rgba(0,0,0,0.31);
-    &:hover{
-        cursor:pointer;
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: -5px 5px 8px -1px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: -5px 5px 8px -1px rgba(0, 0, 0, 0.31);
+  box-shadow: -5px 5px 8px -1px rgba(0, 0, 0, 0.31);
+  &:hover {
+    cursor: pointer;
+  }
+  .cardImgContainer {
+    width: 100%;
+    height: 100%;
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.7s;
+    &:hover {
+      transform: scale(1.03);
     }
-    .cardImgContainer{
-        width: 100%;
-        height: 100%;
-        background-position: initial;
-        background-repeat: no-repeat;
-        background-size: cover;
-        transition: 0.7s;
-        &:hover{
-            transform: scale(1.03)
-        }
-        .cardHoverContainer{
-            background-color: rgba(0, 0, 0, 0.80);
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            h2{
-                @include titleFont($text);
-                color: $secondaryTitle;
-                text-align: center;
-                margin: $small 0px;
-            }
-            p{
-                @include textFont(15px);
-                color: $secondaryText;
-                text-align: center;
-                margin: 0px;
-                font-style: oblique;
-            }
-        }
+    .cardHoverContainer {
+      background-color: rgba(0, 0, 0, 0.8);
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        @include titleFont($text);
+        color: $secondaryTitle;
+        text-align: center;
+        margin: $small 0px;
+      }
+      p {
+        @include textFont(15px);
+        color: $secondaryText;
+        text-align: center;
+        margin: 0px;
+        font-style: oblique;
+      }
     }
+  }
 }
 
 /* Notebooks */
 @media only screen and (min-width: 1300px) and (max-width: 1600px) {
-
-    .cardContainer {
-        width: 350px;
-        height: 200px;
-        .cardImgContainer{
-            .cardHoverContainer{
-                h2{
-                    width: 90%;
-                }
-            }
+  .cardContainer {
+    width: 350px;
+    height: 200px;
+    .cardImgContainer {
+      .cardHoverContainer {
+        h2 {
+          width: 90%;
         }
+      }
     }
-
+  }
 }
 
 /* Ipads */
 @media only screen and (min-width: 1000px) and (max-width: 1299px) {
-
-    .cardContainer {
-        width: 350px;
-        height: 200px;
-        .cardImgContainer{
-            .cardHoverContainer{
-                h2{
-                    width: 90%;
-                    @include titleFont($textIpad);
-                    margin: $extraSmall 0px;
-                }
-            }
+  .cardContainer {
+    width: 350px;
+    height: 200px;
+    .cardImgContainer {
+      .cardHoverContainer {
+        h2 {
+          width: 90%;
+          @include titleFont($textIpad);
+          margin: $extraSmall 0px;
         }
+      }
     }
-
+  }
 }
 
 /* Small Ipad */
 @media only screen and (min-width: 699px) and (max-width: 999px) {
-
-    .cardContainer {
-        width: 300px;
-        height: 200px;
-        .cardImgContainer{
-            .cardHoverContainer{
-                h2{
-                    width: 90%;
-                    @include titleFont($textIpad);
-                    margin: $extraSmall 0px;
-                }
-            }
+  .cardContainer {
+    width: 300px;
+    height: 200px;
+    .cardImgContainer {
+      .cardHoverContainer {
+        h2 {
+          width: 90%;
+          @include titleFont($textIpad);
+          margin: $extraSmall 0px;
         }
+      }
     }
-
+  }
 }
 
 /* Phones */
 @media only screen and (min-width: 200px) and (max-width: 600px) {
-
-    .cardContainer {
-        width: 300px;
-        height: 200px;
-        margin: $extraSmall 0px;
-        .cardImgContainer{
-            .cardHoverContainer{
-                h2{
-                    @include titleFont($textIpad);
-                    width: 90%;
-                    margin: $extraSmall 0px;
-                }
-            }
+  .cardContainer {
+    width: 300px;
+    height: 200px;
+    margin: $extraSmall 0px;
+    .cardImgContainer {
+      .cardHoverContainer {
+        h2 {
+          @include titleFont($textIpad);
+          width: 90%;
+          margin: $extraSmall 0px;
         }
+      }
     }
-
+  }
 }
