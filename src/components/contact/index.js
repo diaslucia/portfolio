@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.scss";
 
 /* Icons */
@@ -7,67 +6,100 @@ import { faWhatsapp, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 /* Animation */
-import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
 
 /* Translations */
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next";
 
 /* GA4 */
 import ReactGA from "react-ga4";
 
 const Contact = () => {
-    const [t] = useTranslation("global");
+  const [t] = useTranslation("global");
 
-    const GAEvent = (category, action) => {
-        ReactGA.event({
-            category: category,
-            action: action,
-        })
-    }
+  const GAEvent = (category, action) => {
+    ReactGA.event({
+      category: category,
+      action: action,
+    });
+  };
 
-    return(
-        <div className="contactContainer" id="contact">
-            <div className="contactBorder">
-
-                <div className="contactTitleContainer">
-                    <h2 className="contactSubtitle">{t("contact.subtitle")}</h2>
-                    <AnimationOnScroll animateIn="animate__slideInDown" animateOnce={true}>
-                        <h1 className="contactTitle">{t("contact.title")}</h1>
-                    </AnimationOnScroll>
-                </div>
-
-
-                <div className="contactWaysContainer">
-                    <div className="contactEachContainer">
-                        <div className="contactIconContainer">
-                            <AnimationOnScroll animateIn="animate__fadeInDown" delay={100} animateOnce={true}>
-                                <a onClick={() => GAEvent("Click", "Click Whatsapp")} href="https://wa.me/+5491169679769" target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon" icon={faWhatsapp}/></a>
-                            </AnimationOnScroll>
-                        </div>
-                        <p>{t("contact.whatsapp")}</p>
-                    </div>
-                    <div className="contactEachContainer">
-                        <div className="contactIconContainer">
-                            <AnimationOnScroll animateIn="animate__fadeInDown" delay={100} animateOnce={true}>
-                                <a onClick={() => GAEvent("Click", "Click Email Me")}  href="mailto:info@luciadias.com" target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon" icon={faEnvelope}/></a>
-                            </AnimationOnScroll>
-                        </div>
-                        <p>{t("contact.email")}</p>
-                    </div>
-                    <div className="contactEachContainer">
-                        <div className="contactIconContainer">
-                            <AnimationOnScroll animateIn="animate__fadeInDown" delay={100} animateOnce={true}>
-                                <a onClick={() => GAEvent("Click", "Click LinkedIn")} href="https://www.linkedin.com/in/lucia-dias/" target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon" icon={faLinkedinIn}/></a>
-                            </AnimationOnScroll>
-                        </div>
-                        <p>{t("contact.linkedin")}</p>
-                    </div>
-                </div>
-
-             </div>
+  return (
+    <div className="contactContainer" id="contact">
+      <div className="contactBorder">
+        <div className="contactTitleContainer">
+          <h2 className="contactSubtitle">{t("contact.subtitle")}</h2>
+          <AnimationOnScroll
+            animateIn="animate__slideInDown"
+            animateOnce={true}
+          >
+            <h1 className="contactTitle">{t("contact.title")}</h1>
+          </AnimationOnScroll>
         </div>
-    );
-}
+
+        <div className="contactWaysContainer">
+          <div className="contactEachContainer">
+            <div className="contactIconContainer">
+              <AnimationOnScroll
+                animateIn="animate__fadeInDown"
+                delay={100}
+                animateOnce={true}
+              >
+                <a
+                  onClick={() => GAEvent("Click", "Click Whatsapp")}
+                  href="https://wa.me/+5491169679769"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon className="icon" icon={faWhatsapp} />
+                </a>
+              </AnimationOnScroll>
+            </div>
+            <p>{t("contact.whatsapp")}</p>
+          </div>
+          <div className="contactEachContainer">
+            <div className="contactIconContainer">
+              <AnimationOnScroll
+                animateIn="animate__fadeInDown"
+                delay={100}
+                animateOnce={true}
+              >
+                <a
+                  onClick={() => GAEvent("Click", "Click Email Me")}
+                  href="mailto:info@luciadias.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon className="icon" icon={faEnvelope} />
+                </a>
+              </AnimationOnScroll>
+            </div>
+            <p>{t("contact.email")}</p>
+          </div>
+          <div className="contactEachContainer">
+            <div className="contactIconContainer">
+              <AnimationOnScroll
+                animateIn="animate__fadeInDown"
+                delay={100}
+                animateOnce={true}
+              >
+                <a
+                  onClick={() => GAEvent("Click", "Click LinkedIn")}
+                  href="https://www.linkedin.com/in/lucia-dias/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon className="icon" icon={faLinkedinIn} />
+                </a>
+              </AnimationOnScroll>
+            </div>
+            <p>{t("contact.linkedin")}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Contact;
