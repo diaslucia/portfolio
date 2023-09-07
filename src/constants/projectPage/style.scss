@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 20;
   .pageAllContainer {
     background-color: $thirdBackground;
     -webkit-box-shadow: -5px 5px 8px -1px rgba(0, 0, 0, 0.31);
@@ -24,6 +25,7 @@
     justify-items: center;
     align-items: flex-start;
     z-index: 99;
+    margin: 0px !important;
     .exit {
       font-size: $title;
       color: $primaryTitle;
@@ -40,11 +42,10 @@
       flex-direction: row;
       justify-content: space-between;
       .pageInfoContainer {
-        margin: 0px 30px;
+        margin: 30px;
         h1 {
           @include titleFont($title);
           color: $primaryTitle;
-          margin-top: 50px;
         }
         h2 {
           @include textFont($text);
@@ -102,7 +103,7 @@
       }
       .pageImgContainer {
         img {
-          width: 450px;
+          width: 400px;
         }
       }
     }
@@ -118,14 +119,13 @@
       margin-bottom: $xl;
       .pageContainer {
         .pageInfoContainer {
-          margin: 0px 30px;
           p {
             max-width: 100%;
           }
         }
         .pageImgContainer {
           img {
-            width: 500px;
+            width: 400px;
           }
         }
       }
@@ -141,10 +141,8 @@
       max-height: 550px;
       .pageContainer {
         .pageInfoContainer {
-          margin: 0px 30px;
           h1 {
             @include titleFont($titleIpad);
-            margin-top: $medium;
           }
           h2 {
             @include textFont($textIpad);
@@ -188,10 +186,8 @@
       max-height: 580px;
       .pageContainer {
         .pageInfoContainer {
-          margin: 0px 30px;
           h1 {
             @include titleFont($titleIpad);
-            margin-top: $medium;
           }
           h2 {
             @include textFont($textIpad);
@@ -236,18 +232,18 @@
       max-height: 80vh;
       margin-bottom: $large;
       z-index: 99;
-      overflow: scroll;
+
       .pageContainer {
         flex-direction: column;
+        overflow: scroll;
         .pageInfoContainer {
-          margin: 0px 20px;
+          margin: 20px;
           h1 {
             @include titleFont($titleIpad);
             margin-top: $small;
           }
           h2 {
             @include textFont($textIpad);
-            margin-bottom: $small;
           }
           p {
             @include textFont(14px);
