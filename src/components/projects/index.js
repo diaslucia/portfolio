@@ -10,8 +10,8 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
 
 /* Data */
-import { PROJECTS } from "../../constants/projects/projects";
-import { DETAILS, DETAILSEN } from "../../constants/details/details";
+import { PROJECTS } from "../../data/projects";
+import { DETAILS, DETAILSEN } from "../../data/details";
 
 /* Translations */
 import { useTranslation } from "react-i18next";

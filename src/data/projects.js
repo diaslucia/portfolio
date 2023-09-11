@@ -1,14 +1,15 @@
-import img1 from "../../assets/p1.jpg";
-import img2 from "../../assets/p2.jpg";
-import img3 from "../../assets/p3.jpg";
-import img5 from "../../assets/p5.jpg";
-import img8 from "../../assets/p8.jpg";
-import img7 from "../../assets/p7.jpg";
-import img9 from "../../assets/p9.jpg";
-import img10 from "../../assets/p10.jpg";
-import img11 from "../../assets/p11.jpg";
-/* import img4 from "../../assets/p4.jpg";
-import img6 from "../../assets/p6.jpg"; */
+import img1 from "../assets/p1.jpg";
+import img2 from "../assets/p2.jpg";
+import img3 from "../assets/p3.jpg";
+import img5 from "../assets/p5.jpg";
+import img8 from "../assets/p8.jpg";
+import img7 from "../assets/p7.jpg";
+import img9 from "../assets/p9.jpg";
+import img10 from "../assets/p10.jpg";
+import img12 from "../assets/p12.jpg";
+/* import img11 from "../assets/p11.jpg"; */
+/* import img4 from "../assets/p4.jpg";
+import img6 from "../assets/p6.jpg"; */
 
 export const PROJECTS = [
   {
@@ -25,9 +26,9 @@ export const PROJECTS = [
   },
   {
     id: 9,
-    title: "Dashboard",
-    tecnology: "Next JS",
-    img: img11,
+    title: "SpaceX",
+    tecnology: "React",
+    img: img12,
   },
   {
     id: 3,

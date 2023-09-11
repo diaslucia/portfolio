@@ -1,14 +1,15 @@
-import page1 from "../../assets/page1.png";
-import page2 from "../../assets/page2.png";
-import page3 from "../../assets/page3.png";
-import page5 from "../../assets/page5.png";
-import page6 from "../../assets/page6.png";
-import page7 from "../../assets/page7.png";
-import page8 from "../../assets/page8.png";
-import page9 from "../../assets/page9.png";
-import page10 from "../../assets/page10.png";
-/* import page1 from "../../assets/page1.png"; */
-/* import page4 from "../../assets/page4.png"; */
+import page1 from "../assets/page1.png";
+import page2 from "../assets/page2.png";
+import page3 from "../assets/page3.png";
+import page5 from "../assets/page5.png";
+import page6 from "../assets/page6.png";
+import page7 from "../assets/page7.png";
+import page8 from "../assets/page8.png";
+import page9 from "../assets/page9.png";
+import page11 from "../assets/page11.png";
+/* import page10 from "../assets/page10.png"; */
+/* import page1 from "../assets/page1.png"; */
+/* import page4 from "d../assets/page4.png"; */
 
 export const DETAILS = [
   {
@@ -90,11 +91,12 @@ export const DETAILS = [
   },
   {
     id: 9,
-    title: "Dashboard",
-    tecnology: "Next JS | SASS | Redux Toolkit | Formik | Auth0",
+    title: "SpaceX",
+    tecnology: "React | TypeScript | Auth0 | SASS",
     description:
-      "Este proyecto representa un panel de control privado diseñado para los clientes de Notimation. Para su desarrollo, integramos una API proporcionada por la empresa. El panel de control se construyo utilizando Next.js. Utiliza Redux Toolkit para gestionar estados globales, i18n para el cambio de idioma, Formik para la validación de formularios, y Auth0 para la autenticación de usuarios.",
-    img: page10,
+      "Este proyecto utiliza la API de SpaceX, permitiendo a los usuarios iniciar sesión y acceder a información sobre los cohetes. El objetivo principal de su creación fue practicar el uso de Apollo GraphQL para consumir la API e implementar Auth0 para la autenticación con JWT.",
+    github: "https://github.com/diaslucia/spacex",
+    img: page11,
   },
 ];
 
@@ -178,10 +180,11 @@ export const DETAILSEN = [
   },
   {
     id: 9,
-    title: "Dashboard",
-    tecnology: "Next JS | SASS | Redux Toolkit | Formik | Auth0",
+    title: "SpaceX",
+    tecnology: "React | TypeScript | Auth0 | SASS",
     description:
-      "This project represents a private dashboard designed for Notimation's clients. For its development, we integrated an API provided by the company. The dashboard was built using Next.js. It utilizes Redux Toolkit to manage global states, i18n for language switching, Formik for form validation, and Auth0 for user authentication.",
-    img: page10,
+      "This website utilizes the SpaceX API, allowing users to log in and access information about the rockets The core aim of its creation was to practice using Apollo GraphQL to consume the API and implement Auth0 for JWT authentication.",
+    github: "https://github.com/diaslucia/spacex",
+    img: page11,
   },
 ];
