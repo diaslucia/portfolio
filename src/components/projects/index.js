@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./style.scss";
 
 /* Components */
-import ProjectCard from "../../constants/projectCard/index";
-import ProjectPage from "../../constants/projectPage/index";
+import ProjectCard from "./projectCard";
+import ProjectPage from "./projectPage";
 
 /* Animations */
 import { AnimationOnScroll } from "react-animation-on-scroll";
@@ -17,19 +17,12 @@ import { DETAILS, DETAILSEN } from "../../data/details";
 import { useTranslation } from "react-i18next";
 
 /* GA4 */
-import ReactGA from "react-ga4";
+import { GAEvent } from "../../hooks/useGaveEvent";
 
 const Projects = ({ lang }) => {
   const [t] = useTranslation("global");
   const [pageItem, setPageItem] = useState([]);
   const [openPage, setOpenPage] = useState(false);
-
-  const GAEvent = (category, action) => {
-    ReactGA.event({
-      category: category,
-      action: action,
-    });
-  };
 
   const renderProjectPage = (id) => {
     let data = lang === false ? DETAILS : DETAILSEN;

@@ -13,17 +13,10 @@ import "animate.css/animate.min.css";
 import { useTranslation } from "react-i18next";
 
 /* GA4 */
-import ReactGA from "react-ga4";
+import { GAEvent } from "../../hooks/useGaveEvent";
 
 const Contact = () => {
   const [t] = useTranslation("global");
-
-  const GAEvent = (category, action) => {
-    ReactGA.event({
-      category: category,
-      action: action,
-    });
-  };
 
   return (
     <div className="contactContainer" id="contact">

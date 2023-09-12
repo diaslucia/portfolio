@@ -6,7 +6,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faXmark, faDisplay } from "@fortawesome/free-solid-svg-icons";
 
 /* GA4 */
-import ReactGA from "react-ga4";
+import { GAEvent } from "../../../hooks/useGaveEvent";
 
 const ProjectPage = ({
   title,
@@ -17,13 +17,6 @@ const ProjectPage = ({
   onClick,
   img,
 }) => {
-  const GAEvent = (category, action) => {
-    ReactGA.event({
-      category: category,
-      action: action,
-    });
-  };
-
   return (
     <div className="backgroundPopup">
       <div className="pageAllContainer">

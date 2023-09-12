@@ -4,17 +4,10 @@ import "./style.scss";
 import { useTranslation } from "react-i18next";
 
 /* GA4 */
-import ReactGA from "react-ga4";
+import { GAEvent } from "../../hooks/useGaveEvent";
 
 const Footer = () => {
   const [t] = useTranslation("global");
-
-  const GAEvent = (category, action) => {
-    ReactGA.event({
-      category: category,
-      action: action,
-    });
-  };
 
   return (
     <footer className="footerContainer">

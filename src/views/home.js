@@ -13,18 +13,11 @@ import Footer from "../components/footer/index";
 import { useTranslation } from "react-i18next";
 
 /* GA4 */
-import ReactGA from "react-ga4";
+import { GAEvent } from "../hooks/useGaveEvent";
 
 const HomeView = () => {
   const [lang, setLang] = useState(false);
   const [t, i18n] = useTranslation("global");
-
-  const GAEvent = (category, action) => {
-    ReactGA.event({
-      category: category,
-      action: action,
-    });
-  };
 
   const handleClick = (e) => {
     e.preventDefault();

@@ -4,7 +4,7 @@ import "./style.scss";
 import { useTranslation } from "react-i18next";
 
 /* Components */
-import Button from "../../constants/button/index";
+import Button from "./button";
 
 const AboutLess = ({ onClick }) => {
   const [t] = useTranslation("global");
